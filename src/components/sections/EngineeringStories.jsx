@@ -19,6 +19,8 @@ const projects = [
       'Maintaining evaluation consistency',
       'Managing large teacher allocations'
     ],
+    githubLink: 'https://github.com/anushka-j18/AI-EVALUATION-SYSTEM',
+    liveLink: 'https://ai-evaluation-system-1mz4.vercel.app/',
   },
   {
     id: '02',
@@ -37,19 +39,22 @@ const projects = [
   },
   {
     id: '03',
-    title: 'Modern E-Commerce',
+    title: 'E-commerce XURVA',
     subtitle: 'High-Performance E-Commerce Platform',
-    description: 'A robust, scalable digital storefront built for the modern consumer. Featuring a seamless checkout experience, dynamic product management, and an intuitive admin dashboard. Awarded 2nd Runner-Up in the regional hackathon.',
-    tech: ['React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
-    features: ['Authentication', 'Payments', 'Admin Dashboard', 'Responsive UI', 'Order Management'],
-    note: '🏆 2nd Runner-Up Hackathon',
+    description: 'Built as a full-stack MERN application, this platform delivers a complete online shopping experience with secure authentication, product and inventory management, payment gateway integration, and an intuitive admin dashboard. Designed with scalability, performance, and user experience at its core, the project demonstrates modern web development practices while handling the complete order lifecycle from product discovery to checkout.',
+    tech: ['React.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Bcrypt', 'Stripe API'],
+    features: ['Secure user authentication & authorization', 'Product catalog with search & filtering', 'Shopping cart & wishlist', 'Stripe payment integration', 'Order & inventory management', 'Admin dashboard for products & orders', 'Fully responsive user interface'],
+    note: '🏆 2nd Runner-Up • Linpack Intra-Club Hackathon',
     timeline: { duration: '1 Month', period: 'Dec 2025 - Jan 2026' },
     challenges: [
-      'Implementing secure stateless session management',
-      'Synchronizing inventory in real-time',
-      'Reducing time-to-first-byte (TTFB) on product pages',
-      'Integrating third-party payment gateways seamlessly'
+      'Designing a scalable REST API architecture for product, order, and user management.',
+      'Implementing secure JWT authentication with protected routes and role-based access.',
+      'Integrating Stripe Checkout while ensuring reliable payment verification.',
+      'Maintaining inventory consistency during concurrent order placement.',
+      'Optimizing API calls and frontend rendering to improve overall application performance.'
     ],
+    githubLink: 'https://github.com/anushka-j18/XURVA',
+    liveLink: 'https://v0-e-commerce-website-v0.vercel.app/'
   }
 ];
 
@@ -137,8 +142,8 @@ const EngineeringStories = () => {
                 )}
 
                 <div className="mt-10 flex gap-6">
-                  <a href="#" className="text-sm font-semibold tracking-widest uppercase border-b border-deep-dark pb-1 hover:text-accent hover:border-accent transition-colors">Read Case Study</a>
-                  <a href="#" className="text-sm font-semibold tracking-widest uppercase border-b border-deep-dark pb-1 hover:text-accent hover:border-accent transition-colors">View GitHub</a>
+                  <a href={project.githubLink || "#"} target={project.githubLink ? "_blank" : "_self"} rel="noopener noreferrer" className="text-sm font-semibold tracking-widest uppercase border-b border-deep-dark pb-1 hover:text-accent hover:border-accent transition-colors">View GitHub</a>
+                  <a href={project.liveLink || "#"} target={project.liveLink ? "_blank" : "_self"} rel="noopener noreferrer" className="text-sm font-semibold tracking-widest uppercase border-b border-accent pb-1 text-accent hover:opacity-80 transition-opacity">Live Deployed Link</a>
                 </div>
               </div>
             </div>
