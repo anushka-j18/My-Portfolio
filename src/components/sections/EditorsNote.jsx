@@ -15,11 +15,13 @@ const EditorsNote = () => {
 
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
           
-          {/* Portrait Placeholder */}
-          <div className="w-full lg:w-5/12 aspect-[4/5] relative group shrink-0">
-            <div className="absolute inset-0 bg-off-white/5 flex items-center justify-center">
-              <span className="text-xl font-serif text-off-white/30">[ Editorial Portrait ]</span>
-            </div>
+          {/* Portrait Image */}
+          <div className="w-full lg:w-5/12 aspect-[4/5] relative group shrink-0 bg-off-white/5">
+            <img 
+              src="/portrait.png" 
+              alt="Anushka Joshi" 
+              className="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-1000"
+            />
             <div className="absolute -bottom-6 -right-6 w-full h-full border border-off-white/10 -z-10"></div>
           </div>
 
@@ -27,31 +29,20 @@ const EditorsNote = () => {
           <div className="flex-1 flex flex-col gap-8 text-lg font-light text-off-white/80 leading-relaxed font-serif">
             
             <p className="text-2xl leading-normal text-off-white">
-              <span className="text-6xl float-left mr-4 mt-2 font-bold text-accent leading-none">E</span>
-              ngineering was never just about code for me—it was about constructing logic that breathes. From the moment I wrote my first script, I was captivated by the sheer power of turning abstract ideas into tangible reality.
+              <span className="text-6xl float-left mr-4 mt-2 font-bold text-accent leading-none">I</span>
+              didn't start programming because I wanted to write code—I started because I wanted to build things that solve real problems.
             </p>
 
             <p>
-              As a Computer Science student at VIT Bhopal University, my journey hasn't been a linear path of standard curriculum. It's been a chaotic, thrilling dive into the unknown, fueled by hackathons, late-night debugging sessions, and an insatiable curiosity about how things work.
-            </p>
-
-            {/* Pull Quote */}
-            <blockquote className="my-8 border-l-2 border-accent pl-8 py-2">
-              <p className="text-3xl font-serif italic text-off-white leading-snug">
-                "I believe the best software doesn't just function—it feels inevitable. It lives at the precise intersection of mathematical logic and human intuition."
-              </p>
-            </blockquote>
-
-            <p>
-              My fascination with Artificial Intelligence grew out of a desire to build systems that don't just compute, but comprehend. Whether I'm designing AI agents that automate complex workflows or architecting robust backend infrastructures, my goal is always to create intelligent software that feels seamless.
+              Today, that curiosity has evolved into building full-stack applications with the MERN stack and experimenting with AI to create smarter software. I enjoy working across the entire development process—from designing backend architectures and APIs to crafting responsive user experiences that make technology feel effortless.
             </p>
 
             <p>
-              But a great product is more than its backend. I have a deep appreciation for beautiful, thoughtful software. I approach frontend engineering with a designer's eye, believing that aesthetic elegance and technical performance are not mutually exclusive—they are deeply intertwined.
+              Every project is an opportunity to learn something new. Whether it's integrating AI models, optimizing application performance, or collaborating during hackathons, I'm driven by the challenge of turning complex ideas into practical solutions.
             </p>
 
             <p>
-              Beyond the IDE, you'll find me leading teams, debating passionately, volunteering with NSS, or unraveling a good mystery novel. Curiosity is my superpower, and it drives everything I build.
+              When I'm away from my laptop, you'll usually find me leading NSS initiatives, participating in hackathons, debating, or immersed in a good mystery novel. I believe curiosity isn't just a personality trait—it's the foundation of great engineering.
             </p>
 
             {/* Signature */}

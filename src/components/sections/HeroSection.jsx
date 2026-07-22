@@ -20,18 +20,18 @@ const HeroSection = () => {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="hidden xl:flex flex-col justify-between w-64 shrink-0 border-r border-deep-dark/10 pr-8 py-8"
+          className="hidden xl:flex flex-col justify-between w-48 shrink-0 border-r border-deep-dark/10 pr-6 py-8"
         >
           <div>
             <p className="text-xs font-semibold tracking-widest-lg uppercase text-accent mb-8">Editor's Note</p>
             <ul className="space-y-4 text-sm font-medium text-deep-dark/70">
-              <li>Computer Science Student</li>
-              <li>Professional Bug Fixer</li>
-              <li>Hackathon Enthusiast</li>
-              <li>Reads Mystery Novels</li>
-              <li>Debater</li>
-              <li>NSS Volunteer</li>
-              <li>Believes Curiosity is a Superpower</li>
+              <li>Final Year CSE Student</li>
+              <li>Full-Stack MERN Developer</li>
+              <li>AI Builder</li>
+              <li>Hackathon</li>
+              <li>NSS Press Lead</li>
+              <li>Mystery Novel Reader</li>
+              <li>Always Learning</li>
             </ul>
           </div>
           <div className="text-xs tracking-widest uppercase text-deep-dark/40 font-semibold">
@@ -90,7 +90,7 @@ const HeroSection = () => {
               transition={{ duration: 1, delay: 0.8 }}
               className="text-lg text-deep-dark/60 max-w-md leading-relaxed mb-12"
             >
-              Building products that combine elegant design with thoughtful engineering.
+              Designing seamless experiences. Engineering scalable MERN systems. Building intelligent AI solutions.
             </motion.p>
 
             <motion.div 
@@ -106,6 +106,30 @@ const HeroSection = () => {
                 [ Download Resume ]
               </a>
             </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1.0 }}
+              className="mt-16 pt-8 border-t border-deep-dark/10 grid grid-cols-2 gap-y-8 gap-x-4 max-w-lg"
+            >
+              <div>
+                <div className="text-3xl font-serif text-deep-dark mb-1">15+</div>
+                <div className="text-[10px] tracking-widest uppercase font-semibold text-deep-dark/50">Projects Built</div>
+              </div>
+              <div>
+                <div className="text-3xl font-serif text-deep-dark mb-1">2x</div>
+                <div className="text-[10px] tracking-widest uppercase font-semibold text-deep-dark/50">Hackathons</div>
+              </div>
+              <div>
+                <div className="text-3xl font-serif text-deep-dark mb-1">300+</div>
+                <div className="text-[10px] tracking-widest uppercase font-semibold text-deep-dark/50">DSA Problems</div>
+              </div>
+              <div>
+                <div className="text-3xl font-serif text-deep-dark mb-1">2+</div>
+                <div className="text-[10px] tracking-widest uppercase font-semibold text-deep-dark/50">Years of Coding</div>
+              </div>
+            </motion.div>
           </div>
 
           {/* Cover Artwork (Vogue style) */}
@@ -113,24 +137,26 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut", delay: 0.5 }}
-            className="w-full lg:w-1/2 aspect-[3/4] relative overflow-hidden group"
+            className="w-full lg:w-1/2 aspect-[3/4] relative overflow-hidden group bg-deep-dark/5"
           >
-            {/* The placeholder requested by user */}
-            <div className="absolute inset-0 bg-charcoal/5 group-hover:bg-charcoal/10 transition-colors duration-700 flex items-center justify-center">
-               <span className="text-4xl font-serif text-deep-dark/20">[ Editorial Portrait / Monogram Placeholder ]</span>
-            </div>
+            {/* Portrait Image */}
+            <img 
+              src="/portrait.png" 
+              alt="Anushka Joshi Portrait" 
+              className="w-full h-full object-cover grayscale-[20%] contrast-125 hover:grayscale-0 hover:scale-105 transition-all duration-[1.5s] ease-out"
+            />
             
             {/* Outline border to mimic magazine edge */}
             <div className="absolute inset-4 border border-deep-dark/10 pointer-events-none z-10"></div>
             
             {/* Magazine Barcode / Details placeholder */}
-            <div className="absolute bottom-6 right-6 flex flex-col items-end gap-1 opacity-50">
-              <div className="w-16 h-8 bg-deep-dark/20 flex gap-0.5">
+            <div className="absolute bottom-6 right-6 flex flex-col items-end gap-1 opacity-50 z-20">
+              <div className="w-16 h-8 bg-off-white/80 flex gap-0.5 p-1">
                 {[...Array(12)].map((_, i) => (
                   <div key={i} className="h-full bg-deep-dark" style={{width: `${Math.random() * 4 + 1}px`, marginLeft: `${Math.random() * 2}px`}}></div>
                 ))}
               </div>
-              <span className="text-[8px] font-sans">9 780201 379624</span>
+              <span className="text-[8px] font-sans text-deep-dark bg-off-white/80 px-1">9 780201 379624</span>
             </div>
           </motion.div>
 
