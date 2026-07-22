@@ -1,40 +1,41 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
+import React, { useEffect } from 'react';
+import Lenis from 'lenis';
 import Navigation from './components/Navigation';
-
-// Pages
-import CoverPage from './pages/CoverPage';
-import About from './pages/About';
-import ProjectsIndex from './pages/ProjectsIndex';
-import FeaturePage from './pages/FeaturePage';
-import Toolkit from './pages/Toolkit';
-
-const AnimatedRoutes = () => {
-  const location = useLocation();
-  return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<CoverPage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<ProjectsIndex />} />
-        <Route path="/projects/:id" element={<FeaturePage />} />
-        <Route path="/toolkit" element={<Toolkit />} />
-      </Routes>
-    </AnimatePresence>
-  );
-};
+import Home from './pages/Home';
 
 function App() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+      direction: 'vertical',
+      gestureDirection: 'vertical',
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
-    <Router>
-      <div className="min-h-screen selection:bg-accent selection:text-white flex flex-col">
-        <Navigation />
-        <main className="flex-grow pt-20">
-          <AnimatedRoutes />
-        </main>
-      </div>
-    </Router>
+    <div className="min-h-screen selection:bg-accent/20 selection:text-accent flex flex-col bg-off-white text-deep-dark">
+      <Navigation />
+      <main className="flex-grow">
+        <Home />
+      </main>
+    </div>
   );
 }
 

@@ -7,13 +7,15 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
+        serif: ['"Cormorant Garamond"', 'serif'],
         sans: ['"Inter"', 'sans-serif'],
       },
       colors: {
-        'accent': '#E53E3E', // Editorial red
-        'off-white': '#F9F9F9',
-        'deep-dark': '#0F0F0F',
+        'accent': '#7A1F2B', // Deep Editorial Burgundy
+        'off-white': '#FAFAFA', // White
+        'deep-dark': '#111111', // Black
+        'soft-gray': '#E9E9E9',
+        'charcoal': '#444444',
       },
       fontSize: {
         '8xl': '6rem',
