@@ -12,13 +12,16 @@ const experiences = [
     ]
   },
   {
-    role: 'Frontend Developer',
-    organization: 'Linpack Club',
+    role: 'Event Management Team Member',
+    organization: 'LINPACK CLUB',
     period: '2024 - Present',
-    responsibilities: 'Developing interactive user interfaces for club projects and internal tools.',
-    impact: 'Improved the user experience of the main portal, resulting in higher member engagement.',
-    learnings: 'Mastered React ecosystem and collaborative Git workflows in a team environment.',
-    achievements: ['Built the new club website', 'Mentored junior developers']
+    responsibilities: 'Planned and coordinated technical events by managing logistics, volunteer coordination, and ensuring smooth event execution.',
+    impact: 'Successfully contributed to the execution of 2 club events, enhancing participant engagement and overall event experience.',
+    learnings: 'Strengthened leadership, teamwork, event planning, communication, and time management skills while working in a collaborative environment.',
+    achievements: [
+      'Managed and executed 2 successful technical events from planning to completion.',
+      'Served as the event anchor (host) for one flagship club event, engaging the audience and coordinating stage proceedings.'
+    ]
   },
   {
     role: 'Hackathon Participant & Builder',
