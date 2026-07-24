@@ -2,13 +2,14 @@ import React from 'react';
 
 const experiences = [
   {
-    role: 'Press Lead & Event Management Volunteer',
-    organization: 'NSS',
-    period: '2023 - Present',
-    responsibilities: 'Spearheaded press and media communications. Organized large-scale events and campaigns.',
-    impact: 'Increased community engagement and expanded outreach through effective media strategy.',
-    learnings: 'Advanced public speaking, crisis management, and cross-functional team leadership.',
-    achievements: ['Organized 5+ major events', 'Featured in local university press']
+    role: 'Press Lead',
+    organization: 'National Service Scheme (NSS)',
+    period: '2024 - 2025',
+    bullets: [
+      'Prepared and published 5+ press reports covering university and community service initiatives.',
+      'Played an active role in a state-level government-supported tree plantation drive, contributing to environmental sustainability efforts.',
+      'Collaborated with multidisciplinary teams to organize and document large-scale social impact events.'
+    ]
   },
   {
     role: 'Frontend Developer',
@@ -55,26 +56,34 @@ const ExperienceTimeline = () => {
               
               <h4 className="text-xl font-medium text-deep-dark/60 uppercase tracking-widest mb-8">{exp.organization}</h4>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-deep-dark/80">
-                <div>
-                  <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Responsibilities</h5>
-                  <p className="font-serif text-lg leading-relaxed mb-6">{exp.responsibilities}</p>
-                  
-                  <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Key Learnings</h5>
-                  <p className="font-serif text-lg leading-relaxed">{exp.learnings}</p>
+              {exp.bullets ? (
+                <ul className="list-disc list-outside ml-4 font-serif text-lg text-deep-dark/80 space-y-3">
+                  {exp.bullets.map((bullet, i) => (
+                    <li key={i} className="leading-relaxed pl-2">{bullet}</li>
+                  ))}
+                </ul>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-deep-dark/80">
+                  <div>
+                    <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Responsibilities</h5>
+                    <p className="font-serif text-lg leading-relaxed mb-6">{exp.responsibilities}</p>
+                    
+                    <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Key Learnings</h5>
+                    <p className="font-serif text-lg leading-relaxed">{exp.learnings}</p>
+                  </div>
+                  <div>
+                    <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Impact</h5>
+                    <p className="font-serif text-lg leading-relaxed mb-6">{exp.impact}</p>
+                    
+                    <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Achievements</h5>
+                    <ul className="list-disc list-inside font-serif text-lg">
+                      {exp.achievements.map((ach, i) => (
+                        <li key={i}>{ach}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Impact</h5>
-                  <p className="font-serif text-lg leading-relaxed mb-6">{exp.impact}</p>
-                  
-                  <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Achievements</h5>
-                  <ul className="list-disc list-inside font-serif text-lg">
-                    {exp.achievements.map((ach, i) => (
-                      <li key={i}>{ach}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+              )}
             </div>
           ))}
         </div>

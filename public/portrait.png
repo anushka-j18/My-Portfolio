@@ -1,0 +1,10 @@
+ import Image from "next/image";
+
+<Image
+  src="WhatsApp Image 2026-07-22 at 23.53.03"
+  alt="Anushka Joshi"
+  width={600}
+  height={800}
+  priority
+  className="object-cover w-full h-full"
+/>

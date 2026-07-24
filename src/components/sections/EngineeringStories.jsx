@@ -3,11 +3,11 @@ import React from 'react';
 const projects = [
   {
     id: '01',
-    title: 'Eval.AI',
+    title: 'AI Evaluation System',
     subtitle: 'AI-Powered Answer Sheet Evaluation System',
     description: (
       <>
-        <span className="text-accent font-semibold">PROBLEM:</span> Manual evaluation is time-consuming, inconsistent, and difficult to scale across large classrooms.{'\n\n'}Educational institutions spend countless hours manually evaluating handwritten answer sheets. Eval.AI streamlines this workflow by combining OCR, AI-assisted evaluation, and a role-based dashboard into a single platform that improves consistency, reduces manual effort, and provides actionable analytics for educators.
+        <span className="text-accent font-semibold">PROBLEM:</span> Manual evaluation is time-consuming, inconsistent, and difficult to scale across large classrooms.{'\n\n'}Educational institutions spend countless hours manually evaluating handwritten answer sheets. AI Evaluation System streamlines this workflow by combining OCR, AI-assisted evaluation, and a role-based dashboard into a single platform that improves consistency, reduces manual effort, and provides actionable analytics for educators.
       </>
     ),
     tech: ['Next.js', 'FastAPI', 'Python', 'PostgreSQL', 'OCR'],
@@ -24,22 +24,7 @@ const projects = [
   },
   {
     id: '02',
-    title: 'Histori.AI',
-    subtitle: 'AI-powered Historical Landmark Recognition Platform',
-    description: 'An intelligent platform that transforms how users interact with historical sites. By simply scanning a landmark, the AI instantly recognizes the location and provides rich historical context, interactive 3D experiences, and smart itinerary planning.',
-    tech: ['React', 'FastAPI', 'MongoDB', 'TensorFlow / YOLO', 'Google Maps API'],
-    features: ['AI landmark recognition', 'Interactive historical information', 'Smart itinerary planning', '3D experiences', 'Map integration'],
-    timeline: { duration: '2 Months', period: 'Feb 2026 - Apr 2026' },
-    challenges: [
-      'Optimizing YOLO models for mobile devices',
-      'Ensuring high accuracy across varying lighting conditions',
-      'Processing 3D assets with minimal latency',
-      'Syncing local cache for offline capabilities'
-    ],
-  },
-  {
-    id: '03',
-    title: 'E-commerce XURVA',
+    title: 'XURVA',
     subtitle: 'High-Performance E-Commerce Platform',
     description: 'Built as a full-stack MERN application, this platform delivers a complete online shopping experience with secure authentication, product and inventory management, payment gateway integration, and an intuitive admin dashboard. Designed with scalability, performance, and user experience at its core, the project demonstrates modern web development practices while handling the complete order lifecycle from product discovery to checkout.',
     tech: ['React.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Bcrypt', 'Stripe API'],
@@ -55,6 +40,21 @@ const projects = [
     ],
     githubLink: 'https://github.com/anushka-j18/XURVA',
     liveLink: 'https://v0-e-commerce-website-v0.vercel.app/'
+  },
+  {
+    id: '03',
+    title: 'Histori.AI',
+    subtitle: 'AI-powered Historical Landmark Recognition Platform',
+    description: 'An intelligent platform that transforms how users interact with historical sites. By simply scanning a landmark, the AI instantly recognizes the location and provides rich historical context, interactive 3D experiences, and smart itinerary planning.',
+    tech: ['React', 'FastAPI', 'MongoDB', 'TensorFlow / YOLO', 'Google Maps API'],
+    features: ['AI landmark recognition', 'Interactive historical information', 'Smart itinerary planning', '3D experiences', 'Map integration'],
+    timeline: { duration: '2 Months', period: 'Feb 2026 - Apr 2026' },
+    challenges: [
+      'Optimizing YOLO models for mobile devices',
+      'Ensuring high accuracy across varying lighting conditions',
+      'Processing 3D assets with minimal latency',
+      'Syncing local cache for offline capabilities'
+    ],
   }
 ];
 
