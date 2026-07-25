@@ -40,5 +40,21 @@ export const projects = [
     techStack: "D3.js, React, Tailwind CSS",
     outcome: "Decision-making time was reduced by 30%, and the dashboards became the central tool for quarterly strategic planning.",
     pullQuote: "\"Data is only as valuable as our ability to understand it at a glance.\""
+  },
+  {
+    id: "study-planner",
+    issue: "04",
+    title: "Study Planner",
+    eyebrow: "FEATURE / FULL STACK APP",
+    subhead: "A modern, intuitive study planner web app built with Next.js and React to help students manage classes, assignments, and deadlines with smart reminders.",
+    byline: "By Anushka | 75 Mins",
+    heroImage: "/project-hero-4.png", 
+    problem: "PromptX Hackathon Challenge: Design and build a fully functional project in just 75 minutes. Students need a way to manage classes, assignments, and deadlines efficiently with smart reminders.",
+    approach: "Built a modern, intuitive study planner utilizing Next.js 14, Tailwind CSS, and Shadcn/ui for a rapid frontend, backed by PostgreSQL (Supabase) and NextAuth.js. Included an interactive weekly timetable with drag-and-drop, assignment tracker, built-in Pomodoro timer, and a grade calculator.",
+    techStack: "Next.js 14, React 18, TypeScript, Tailwind CSS, Supabase",
+    outcome: "Successfully delivered a fully responsive, functional study planner within the 75-minute limit. The project was awarded PromptX Hackathon Winner.",
+    pullQuote: "\"PromptX Hackathon Winner: A fully functional project built in just 75 minutes.\"",
+    github: "https://github.com/anushka-j18/Studyplannerr",
+    liveLink: "https://v0-study-planner-website-57.vercel.app/"
   }
 ];

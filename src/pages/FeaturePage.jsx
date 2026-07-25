@@ -58,13 +58,31 @@ const FeaturePage = () => {
             {project.subhead}
           </h2>
           
-          <div className="flex items-center gap-4 text-xs tracking-widest uppercase text-deep-dark mb-16 pb-8 border-b border-deep-dark/10">
+          <div className="flex flex-wrap items-center gap-4 text-xs tracking-widest uppercase text-deep-dark pb-8 border-b border-deep-dark/10 mb-8">
             <span className="font-semibold">{project.byline.split('|')[0].trim()}</span>
             <span className="w-1 h-1 rounded-full bg-accent"></span>
             <span className="text-deep-dark/60">{project.byline.split('|')[1].trim()}</span>
             <span className="w-1 h-1 rounded-full bg-accent"></span>
             <span className="text-deep-dark/60">{project.techStack}</span>
           </div>
+
+          {(project.github || project.liveLink) && (
+            <div className="flex flex-wrap gap-4 mb-16">
+              {project.liveLink && (
+                <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-accent text-off-white text-xs font-semibold tracking-widest uppercase hover:bg-deep-dark transition-colors">
+                  Live Demo
+                </a>
+              )}
+              {project.github && (
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-deep-dark/20 text-deep-dark text-xs font-semibold tracking-widest uppercase hover:border-accent hover:text-accent transition-colors">
+                  GitHub Repo
+                </a>
+              )}
+            </div>
+          )}
+          {!(project.github || project.liveLink) && (
+            <div className="mb-8"></div>
+          )}
 
           <div className="prose prose-lg prose-neutral max-w-none space-y-12 columns-1 md:columns-2 gap-12">
             <div className="break-inside-avoid">

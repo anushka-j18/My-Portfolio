@@ -55,6 +55,23 @@ const projects = [
       'Processing 3D assets with minimal latency',
       'Syncing local cache for offline capabilities'
     ],
+  },
+  {
+    id: '04',
+    title: 'Study Planner',
+    subtitle: 'A Modern Web App for Students',
+    description: 'A modern, intuitive study planner web app built with Next.js and React to help students manage classes, assignments, and deadlines with smart reminders. The challenge was to design and build a fully functional project in just 75 minutes.',
+    tech: ['Next.js 14', 'React 18', 'TypeScript', 'Tailwind CSS', 'Supabase'],
+    features: ['Interactive weekly timetable', 'Assignment tracker', 'Customizable reminders', 'Pomodoro study timer', 'Grade calculator'],
+    note: '🏆 PromptX Hackathon Winner',
+    timeline: { duration: '75 Mins', period: 'Hackathon Event' },
+    challenges: [
+      'Designing and building a fully functional project within a strict 75-minute limit.',
+      'Implementing drag-and-drop for the weekly timetable quickly.',
+      'Integrating a built-in Pomodoro timer and assignment tracker seamlessly.'
+    ],
+    githubLink: 'https://github.com/anushka-j18/Studyplannerr',
+    liveLink: 'https://v0-study-planner-website-57.vercel.app/'
   }
 ];
 
