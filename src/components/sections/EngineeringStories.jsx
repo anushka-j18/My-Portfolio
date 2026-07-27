@@ -72,6 +72,21 @@ const projects = [
     ],
     githubLink: 'https://github.com/anushka-j18/Studyplannerr',
     liveLink: 'https://v0-study-planner-website-57.vercel.app/'
+  },
+  {
+    id: '05',
+    title: 'Badminton Score Counter',
+    subtitle: 'A Simple and Responsive Score Counter',
+    description: 'A simple and responsive Badminton Score Counter built for quick and accurate match tracking. The app allows players to record scores, reset games, adjust settings such as points-to-win, and view match history with ease. Designed to be lightweight, intuitive, and ideal for both casual and practice matches.',
+    tech: ['v0', 'Vercel', 'React', 'Tailwind CSS'],
+    features: ['Record scores', 'Reset games', 'Adjust points-to-win', 'View match history', 'Responsive design'],
+    timeline: { duration: '1 Day', period: 'Side Project' },
+    challenges: [
+      'Designing an intuitive and accessible UI for quick score recording.',
+      'Managing application state for match history and game resets.'
+    ],
+    githubLink: 'https://github.com/anushka-j18/MatchMeter---Badminton-Score-Counter',
+    liveLink: 'https://v0-badminton-score-counter.vercel.app/'
   }
 ];
 

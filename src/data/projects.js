@@ -56,5 +56,21 @@ export const projects = [
     pullQuote: "\"PromptX Hackathon Winner: A fully functional project built in just 75 minutes.\"",
     github: "https://github.com/anushka-j18/Studyplannerr",
     liveLink: "https://v0-study-planner-website-57.vercel.app/"
+  },
+  {
+    id: "badminton-score-counter",
+    issue: "05",
+    title: "Badminton Score Counter",
+    eyebrow: "FEATURE / WEB APP",
+    subhead: "A simple and responsive Badminton Score Counter built for quick and accurate match tracking.",
+    byline: "By Anushka",
+    heroImage: "/project-hero-5.png",
+    problem: "Players needed a lightweight, intuitive way to record scores, reset games, and adjust settings like points-to-win during casual and practice matches.",
+    approach: "Designed a simple and responsive web app utilizing v0.app and Vercel for rapid deployment and continuous sync. The app features intuitive controls and match history viewing.",
+    techStack: "v0, Vercel",
+    outcome: "Created a highly accessible and intuitive tool that makes match tracking effortless.",
+    pullQuote: "\"A lightweight, intuitive tool that makes match tracking effortless for both casual and practice matches.\"",
+    github: "https://github.com/anushka-j18/MatchMeter---Badminton-Score-Counter",
+    liveLink: "https://v0-badminton-score-counter.vercel.app/"
   }
 ];
