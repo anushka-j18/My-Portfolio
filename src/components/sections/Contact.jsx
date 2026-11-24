@@ -17,7 +17,7 @@ const Contact = () => {
           <div className="flex flex-col md:flex-row gap-12 md:gap-24 text-lg font-serif">
             <div>
               <p className="text-sm font-sans font-semibold tracking-widest uppercase text-off-white/40 mb-2">Location</p>
-              <p>Bhopal, India</p>
+              <p>Mumbai, India</p>
             </div>
             <div>
               <p className="text-sm font-sans font-semibold tracking-widest uppercase text-off-white/40 mb-2">Availability</p>
@@ -25,7 +25,7 @@ const Contact = () => {
             </div>
             <div>
               <p className="text-sm font-sans font-semibold tracking-widest uppercase text-off-white/40 mb-2">Inquiries</p>
-              <a href="mailto:hello@example.com" className="hover:text-accent transition-colors">hello@example.com</a>
+              <a href="mailto:anushka.kp.joshi@gmail.com" className="hover:text-accent transition-colors">anushka.kp.joshi@gmail.com</a>
             </div>
           </div>
         </div>

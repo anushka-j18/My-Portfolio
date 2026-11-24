@@ -100,8 +100,8 @@ const Toolkit = () => {
             </p>
             
             <div className="space-y-6 w-full">
-              <a href="mailto:hello@example.com" className="block text-lg border-b border-off-white/20 pb-4 hover:border-accent hover:text-accent transition-colors">
-                hello@example.com
+              <a href="mailto:anushka.kp.joshi@gmail.com" className="block text-lg border-b border-off-white/20 pb-4 hover:border-accent hover:text-accent transition-colors">
+                anushka.kp.joshi@gmail.com
               </a>
               <a href="#" className="block text-lg border-b border-off-white/20 pb-4 hover:border-accent hover:text-accent transition-colors">
                 LinkedIn
