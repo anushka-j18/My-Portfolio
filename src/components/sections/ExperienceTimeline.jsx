@@ -3,12 +3,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const ExperienceTimeline = () => {
   const [isCertModalOpen, setIsCertModalOpen] = useState(false);
+  const [isAppointmentModalOpen, setIsAppointmentModalOpen] = useState(false);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === 'Escape') setIsCertModalOpen(false);
+      if (e.key === 'Escape') {
+        setIsCertModalOpen(false);
+        setIsAppointmentModalOpen(false);
+      }
     };
-    if (isCertModalOpen) {
+    if (isCertModalOpen || isAppointmentModalOpen) {
       window.addEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'hidden';
     } else {
@@ -18,7 +22,7 @@ const ExperienceTimeline = () => {
       window.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'unset';
     };
-  }, [isCertModalOpen]);
+  }, [isCertModalOpen, isAppointmentModalOpen]);
 
   return (
     <section id="experience" className="w-full bg-off-white text-deep-dark py-32 px-6 md:px-12">
@@ -199,6 +203,22 @@ const ExperienceTimeline = () => {
                 </div>
               </div>
             </div>
+
+            {/* Appointment Letter Action Bar */}
+            <div className="mt-8 pt-4 border-t border-deep-dark/10 flex flex-wrap items-center justify-between gap-4">
+              <div className="text-xs font-mono uppercase tracking-widest text-deep-dark/60">
+                <span className="font-semibold text-deep-dark/40 mr-2">APPOINTMENT:</span>
+                <span>Core Member (Event Management Team) · Academic Year 2024–25</span>
+              </div>
+
+              <button
+                onClick={() => setIsAppointmentModalOpen(true)}
+                className="text-xs font-semibold tracking-widest uppercase border-b border-accent pb-0.5 text-accent hover:opacity-75 transition-opacity flex items-center gap-1.5 cursor-pointer"
+              >
+                <span>View Appointment Letter</span>
+                <span>→</span>
+              </button>
+            </div>
           </div>
 
           {/* 4. Hackathon Participant & Builder */}
@@ -308,6 +328,74 @@ const ExperienceTimeline = () => {
               <div className="mt-3 pt-3 border-t border-deep-dark/10 flex flex-wrap items-center justify-between text-[11px] font-mono text-deep-dark/60">
                 <span>Ms. Anushka Joshi (23BCE10733) • VIT Bhopal</span>
                 <span>Date of Issue: 30 June 2026</span>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* OFFICIAL LINPACK CLUB APPOINTMENT LETTER MODAL */}
+      <AnimatePresence>
+        {isAppointmentModalOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsAppointmentModalOpen(false)}
+              className="absolute inset-0 bg-deep-dark/80 backdrop-blur-sm cursor-pointer"
+            />
+
+            {/* Modal Window */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96, y: 15 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.96, y: 15 }}
+              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="relative z-10 bg-off-white text-deep-dark w-full max-w-2xl border border-deep-dark/20 p-5 md:p-7 shadow-2xl overflow-y-auto max-h-[92vh] flex flex-col"
+            >
+              {/* Header */}
+              <div className="flex justify-between items-center border-b border-deep-dark/10 pb-3 mb-4">
+                <div>
+                  <span className="text-[11px] font-mono uppercase tracking-widest text-deep-dark/50 block">
+                    Linpack Club • VIT Bhopal
+                  </span>
+                  <span className="text-base font-serif font-semibold text-deep-dark">
+                    Official Appointment Letter
+                  </span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <a
+                    href="/linpack-appointment-letter.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-semibold tracking-widest uppercase border-b border-accent pb-0.5 text-accent hover:opacity-75 transition-opacity"
+                  >
+                    Open PDF ↗
+                  </a>
+                  <button
+                    onClick={() => setIsAppointmentModalOpen(false)}
+                    className="text-xs font-mono uppercase tracking-widest text-deep-dark/60 hover:text-accent transition-colors cursor-pointer ml-2"
+                  >
+                    Close ✕
+                  </button>
+                </div>
+              </div>
+
+              {/* Appointment Letter Image View */}
+              <div className="bg-white border border-deep-dark/15 p-2 shadow-inner rounded-sm overflow-hidden flex items-center justify-center">
+                <img
+                  src="/linpack-appointment-letter.jpg"
+                  alt="Linpack Club Appointment Letter - Core Member Event Management Team - Anushka Joshi"
+                  className="w-full h-auto object-contain max-h-[72vh] shadow-sm"
+                />
+              </div>
+
+              {/* Footer Credentials */}
+              <div className="mt-3 pt-3 border-t border-deep-dark/10 flex flex-wrap items-center justify-between text-[11px] font-mono text-deep-dark/60">
+                <span>Anushka Joshi (23BCE10733) • Core Member</span>
+                <span>Issued: 10th Sep 2024 • Academic Year 2024–25</span>
               </div>
             </motion.div>
           </div>
