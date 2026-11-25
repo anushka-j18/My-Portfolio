@@ -130,44 +130,73 @@ const ExperienceTimeline = () => {
             </ul>
           </div>
 
-          {/* 3. Event Management Team Member (LINPACK CLUB) */}
+          {/* 3. Event Management & Club Leadership (LINPACK CLUB) */}
           <div className="mb-20 pl-8 md:pl-16 relative">
             {/* Timeline Marker */}
             <div className="absolute w-3 h-3 bg-accent rounded-full -left-[6.5px] top-3"></div>
             
             <div className="flex flex-col md:flex-row gap-4 md:gap-12 items-baseline mb-4">
-              <h3 className="text-3xl md:text-4xl font-serif text-deep-dark">Event Management Team Member</h3>
-              <span className="text-sm font-semibold tracking-widest uppercase text-accent shrink-0">2024 - PRESENT</span>
+              <h3 className="text-3xl md:text-4xl font-serif text-deep-dark">Linpack Club – Event Management</h3>
+              <span className="text-sm font-semibold tracking-widest uppercase text-accent shrink-0">
+                September 2024 – March 2025
+              </span>
             </div>
             
             <h4 className="text-sm md:text-base font-medium text-deep-dark/60 uppercase tracking-widest mb-6">
-              LINPACK CLUB • TECHNICAL CLUB MANAGEMENT
+              TECHNICAL CLUB MANAGEMENT & EVENT LEADERSHIP
             </h4>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-deep-dark/80">
               <div>
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Responsibilities</h5>
-                <p className="font-serif text-lg leading-relaxed mb-6">
-                  Planned and coordinated technical events by managing logistics, volunteer coordination, and ensuring smooth event execution.
-                </p>
+                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-3">
+                  Event Planning & Anchoring — December 2024
+                </h5>
+                <ul className="list-disc list-outside ml-4 font-serif text-lg leading-relaxed space-y-2 mb-6">
+                  <li className="pl-1">Successfully organized and conducted a flagship two-day club event.</li>
+                  <li className="pl-1">Served as the anchor for the entire two-day event, commanding stage proceedings, driving audience engagement, and leading session transitions.</li>
+                  <li className="pl-1">Managed cross-functional coordination and ensured seamless communication throughout both days.</li>
+                </ul>
                 
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Key Learnings</h5>
-                <p className="font-serif text-lg leading-relaxed">
-                  Strengthened leadership, teamwork, event planning, communication, and time management skills while working in a collaborative environment.
-                </p>
+                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-3">
+                  Event Planning & Execution — February 2026
+                </h5>
+                <ul className="list-disc list-outside ml-4 font-serif text-lg leading-relaxed space-y-2">
+                  <li className="pl-1">Played a key role in successfully organizing and executing another major club event.</li>
+                  <li className="pl-1">Handled end-to-end task planning, oversaw activity timelines, and ensured smooth operational progression.</li>
+                  <li className="pl-1">Coordinated responsibilities and managed on-ground activities to deliver successful execution.</li>
+                </ul>
               </div>
 
               <div>
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Impact & Highlights</h5>
+                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-3">
+                  Core Leadership & Execution
+                </h5>
                 <p className="font-serif text-lg leading-relaxed mb-6">
-                  Successfully contributed to the execution of 2 club events, enhancing participant engagement and overall event experience.
+                  Demonstrated ability to take end-to-end responsibility, coordinate multidisciplinary team members, speak confidently in front of large audiences, and deliver flawless execution under real-time event demands.
                 </p>
                 
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Key Achievements</h5>
-                <ul className="list-disc list-inside font-serif text-lg space-y-1">
-                  <li>Managed and executed 2 successful technical events from planning to completion.</li>
-                  <li>Served as the event anchor (host) for one flagship club event, engaging the audience and coordinating stage proceedings.</li>
-                </ul>
+                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-3">
+                  Key Skills Demonstrated
+                </h5>
+                <div className="flex flex-wrap gap-2 pt-1">
+                  {[
+                    'Event Planning & Management',
+                    'Leadership & Coordination',
+                    'Public Speaking & Anchoring',
+                    'Task Management',
+                    'Event Execution',
+                    'Team Coordination',
+                    'Communication',
+                    'Problem Solving',
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="text-xs font-mono bg-deep-dark/5 text-deep-dark/80 px-2.5 py-1 rounded border border-deep-dark/5"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
