@@ -62,9 +62,12 @@ const projectsData = [
     title: 'AI-Powered Answer Sheet Evaluation System',
     shortTitle: 'AI Evaluation System',
     category: 'AI / Full Stack Development',
+    badge: 'Internship Project • VolitionSphere IT Services LLP',
+    duration: '1/05/2026 – 30/06/2026',
+    role: 'Intern (Solo Developer)',
     filterCategories: ['AI / GenAI', 'Full Stack'],
     description:
-      'An AI-powered digital evaluation platform that automates answer-sheet assessment using OCR and Large Language Models while maintaining a human-in-the-loop review process.',
+      'An AI-powered digital evaluation platform that automates answer-sheet assessment using OCR and Large Language Models while maintaining a human-in-the-loop review process. Independently designed and developed as an internship project at VolitionSphere IT Services LLP.',
     tech: ['Next.js', 'React.js', 'Python', 'FastAPI', 'PostgreSQL', 'OCR', 'LLM APIs'],
     features: [
       'Automated answer-sheet text extraction using OCR.',
@@ -74,7 +77,7 @@ const projectsData = [
       'Teacher-oriented evaluation dashboard.',
       'Validation using a collection of 100 test papers.',
     ],
-    timeline: { duration: '3 Months', period: 'May 2026 - July 2026' },
+    timeline: { duration: '2 Months', period: '1/05/2026 – 30/06/2026' },
     challenges: [
       'Extracting handwritten answers reliably across varied handwriting styles.',
       'Designing scalable evaluation workflows with automated fallback to human review.',
@@ -82,10 +85,12 @@ const projectsData = [
       'Managing large teacher allocations and batch CSV exports.',
     ],
     metrics: [
+      { label: 'Internship', value: 'VolitionSphere LLP' },
+      { label: 'Duration', value: '1/05/2026 – 30/06/2026' },
+      { label: 'Role & Ownership', value: 'Intern (Solo Project)' },
       { label: 'Validation Set', value: '100 Test Papers' },
-      { label: 'Architecture', value: 'Human-in-the-loop' },
-      { label: 'Role-Based Flow', value: 'Teacher & Admin' },
     ],
+    experienceLink: '#experience',
     githubLink: 'https://github.com/anushka-j18/AI-EVALUATION-SYSTEM',
     liveLink: 'https://ai-evaluation-system-1mz4.vercel.app/',
     VisualComponent: AiEvaluationVisual,
@@ -436,7 +441,7 @@ const EngineeringStories = () => {
 
                         {/* Quick Metrics Bar below visual */}
                         {project.metrics && (
-                          <div className="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-deep-dark/10 text-center">
+                          <div className={`grid ${project.metrics.length === 4 ? 'grid-cols-2 md:grid-cols-4' : 'grid-cols-3'} gap-2 mt-3 pt-3 border-t border-deep-dark/10 text-center`}>
                             {project.metrics.map((m, idx) => (
                               <div key={idx} className="bg-deep-dark/[0.02] p-2 rounded border border-deep-dark/5">
                                 <span className="block text-[9px] font-mono uppercase text-deep-dark/40 tracking-wider">
@@ -455,13 +460,25 @@ const EngineeringStories = () => {
                       <div className="w-full lg:w-1/2 flex flex-col justify-between">
                         <div>
                           {/* Eyebrow & Badges */}
-                          <div className="flex flex-wrap items-center gap-3 mb-4">
+                          <div className="flex flex-wrap items-center gap-2.5 mb-4">
                             <span className="text-accent font-serif text-2xl italic">
                               No. {project.id}
                             </span>
                             <span className="text-xs font-mono uppercase tracking-widest text-deep-dark/40 bg-deep-dark/5 px-2.5 py-1 rounded">
                               {project.category}
                             </span>
+
+                            {project.badge && (
+                              <span className="text-xs font-semibold text-accent bg-accent/10 border border-accent/20 px-2.5 py-1 rounded">
+                                {project.badge}
+                              </span>
+                            )}
+
+                            {project.duration && (
+                              <span className="text-xs font-mono font-medium text-deep-dark/70 bg-deep-dark/5 px-2.5 py-1 rounded">
+                                {project.duration}
+                              </span>
+                            )}
 
                             {project.achievement && (
                               <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-900 bg-amber-50 border border-amber-200/80 px-2.5 py-1 rounded">
@@ -618,6 +635,17 @@ const EngineeringStories = () => {
                                   <div className="pt-4 border-t border-deep-dark/10 flex items-center justify-between text-xs font-mono text-deep-dark/60">
                                     <span>TIMELINE: {project.timeline.duration}</span>
                                     <span>{project.timeline.period}</span>
+                                  </div>
+                                )}
+
+                                {project.experienceLink && (
+                                  <div className="pt-3 flex justify-end">
+                                    <a
+                                      href={project.experienceLink}
+                                      className="text-xs font-semibold tracking-widest uppercase border-b border-accent pb-0.5 text-accent hover:opacity-75 transition-opacity"
+                                    >
+                                      View Internship Details in Experience Section →
+                                    </a>
                                   </div>
                                 )}
                               </div>
