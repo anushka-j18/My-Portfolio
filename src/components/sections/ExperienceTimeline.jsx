@@ -217,7 +217,7 @@ const ExperienceTimeline = () => {
         </div>
       </div>
 
-      {/* THEME-MATCHED EDITORIAL CERTIFICATE MODAL */}
+      {/* OFFICIAL VOLITIONSPHERE CERTIFICATE MODAL */}
       <AnimatePresence>
         {isCertModalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8">
@@ -227,75 +227,58 @@ const ExperienceTimeline = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsCertModalOpen(false)}
-              className="absolute inset-0 bg-deep-dark/70 backdrop-blur-sm cursor-pointer"
+              className="absolute inset-0 bg-deep-dark/80 backdrop-blur-sm cursor-pointer"
             />
 
-            {/* Modal Canvas */}
+            {/* Modal Window */}
             <motion.div
               initial={{ opacity: 0, scale: 0.96, y: 15 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.96, y: 15 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="relative z-10 bg-off-white text-deep-dark w-full max-w-2xl border border-deep-dark/20 p-8 md:p-12 shadow-2xl overflow-y-auto max-h-[90vh]"
+              className="relative z-10 bg-off-white text-deep-dark w-full max-w-2xl border border-deep-dark/20 p-5 md:p-7 shadow-2xl overflow-y-auto max-h-[92vh] flex flex-col"
             >
-              {/* Close Button */}
-              <div className="flex justify-between items-center border-b border-deep-dark/10 pb-4 mb-8">
-                <span className="text-xs font-mono uppercase tracking-widest text-deep-dark/50">
-                  VolitionSphere IT Services LLP
-                </span>
-                <button
-                  onClick={() => setIsCertModalOpen(false)}
-                  className="text-xs font-mono uppercase tracking-widest hover:text-accent transition-colors cursor-pointer"
-                >
-                  Close ✕
-                </button>
-              </div>
-
-              {/* Certificate Inner Frame */}
-              <div className="border border-deep-dark/15 p-6 md:p-10 text-center bg-white">
-                <div className="text-xs font-semibold tracking-widest uppercase text-accent mb-3">
-                  Certificate of Internship Completion
+              {/* Header */}
+              <div className="flex justify-between items-center border-b border-deep-dark/10 pb-3 mb-4">
+                <div>
+                  <span className="text-[11px] font-mono uppercase tracking-widest text-deep-dark/50 block">
+                    VolitionSphere IT Services LLP
+                  </span>
+                  <span className="text-base font-serif font-semibold text-deep-dark">
+                    Official Internship Certificate
+                  </span>
                 </div>
-
-                <h3 className="text-3xl md:text-5xl font-serif text-deep-dark mb-4">
-                  Anushka
-                </h3>
-
-                <p className="font-serif text-base md:text-lg text-deep-dark/80 max-w-lg mx-auto leading-relaxed mb-6">
-                  Successfully completed an engineering internship at <strong>VolitionSphere IT Services LLP</strong> as an <strong>Intern</strong> from <strong>1 May 2026 to 30 June 2026</strong>.
-                </p>
-
-                <div className="border-t border-b border-deep-dark/10 py-4 my-6 text-left">
-                  <div className="text-xs font-mono uppercase tracking-widest text-deep-dark/40 mb-1">
-                    Solo Engineering Project Delivered:
-                  </div>
-                  <div className="font-serif text-xl font-medium text-deep-dark mb-2">
-                    Full-Stack AI-Assisted Answer-Sheet Evaluation Platform
-                  </div>
-                  <p className="text-sm font-light text-deep-dark/70 leading-relaxed">
-                    Independently designed and developed across full-stack engineering, MongoDB database design, backend API development, feature implementation, testing, and OCR/AI assessment workflows.
-                  </p>
-                </div>
-
-                <div className="flex justify-between items-center text-xs font-mono text-deep-dark/60 pt-2">
-                  <span>Duration: 1 May 2026 – 30 June 2026</span>
-                  <span className="text-accent font-semibold">Official Credential</span>
+                <div className="flex items-center gap-4">
+                  <a
+                    href="/volitionsphere-internship-certificate.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-semibold tracking-widest uppercase border-b border-accent pb-0.5 text-accent hover:opacity-75 transition-opacity"
+                  >
+                    Open PDF ↗
+                  </a>
+                  <button
+                    onClick={() => setIsCertModalOpen(false)}
+                    className="text-xs font-mono uppercase tracking-widest text-deep-dark/60 hover:text-accent transition-colors cursor-pointer ml-2"
+                  >
+                    Close ✕
+                  </button>
                 </div>
               </div>
 
-              {/* Modal Actions */}
-              <div className="mt-8 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-deep-dark/60">
-                <span className="text-[11px]">
-                  Place PDF copy at <code className="bg-deep-dark/5 px-1.5 py-0.5 rounded text-deep-dark">public/volitionsphere-internship-certificate.pdf</code>
-                </span>
-                <a
-                  href="/volitionsphere-internship-certificate.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs font-semibold tracking-widest uppercase border-b border-deep-dark pb-0.5 text-deep-dark hover:border-accent hover:text-accent transition-colors"
-                >
-                  Open PDF Document →
-                </a>
+              {/* Certificate Image View */}
+              <div className="bg-white border border-deep-dark/15 p-2 shadow-inner rounded-sm overflow-hidden flex items-center justify-center">
+                <img
+                  src="/volitionsphere-internship-certificate.png"
+                  alt="VolitionSphere IT Services LLP Internship Certificate - Ms. Anushka Joshi"
+                  className="w-full h-auto object-contain max-h-[72vh] shadow-sm"
+                />
+              </div>
+
+              {/* Footer Credentials */}
+              <div className="mt-3 pt-3 border-t border-deep-dark/10 flex flex-wrap items-center justify-between text-[11px] font-mono text-deep-dark/60">
+                <span>Ms. Anushka Joshi (23BCE10733) • VIT Bhopal</span>
+                <span>Date of Issue: 30 June 2026</span>
               </div>
             </motion.div>
           </div>
