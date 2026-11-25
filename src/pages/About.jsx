@@ -21,8 +21,8 @@ const About = () => {
           </h2>
           <div className="w-16 h-[1px] bg-deep-dark/20 mb-8"></div>
           <img 
-            src="https://images.unsplash.com/photo-1544168190-79c15427015f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-            alt="Anushka" 
+            src="/portrait.png" 
+            alt="Anushka Joshi" 
             className="w-full aspect-[3/4] object-cover grayscale mb-6"
           />
           <p className="text-sm uppercase tracking-widest text-deep-dark/50">Issue 01 Contributor</p>
