@@ -103,10 +103,20 @@ const Toolkit = () => {
               <a href="mailto:anushka.kp.joshi@gmail.com" className="block text-lg border-b border-off-white/20 pb-4 hover:border-accent hover:text-accent transition-colors">
                 anushka.kp.joshi@gmail.com
               </a>
-              <a href="#" className="block text-lg border-b border-off-white/20 pb-4 hover:border-accent hover:text-accent transition-colors">
+              <a 
+                href="https://www.linkedin.com/in/anushka-joshi-b0209028a/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="block text-lg border-b border-off-white/20 pb-4 hover:border-accent hover:text-accent transition-colors"
+              >
                 LinkedIn
               </a>
-              <a href="#" className="block text-lg border-b border-off-white/20 pb-4 hover:border-accent hover:text-accent transition-colors">
+              <a 
+                href="https://github.com/anushka-j18" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="block text-lg border-b border-off-white/20 pb-4 hover:border-accent hover:text-accent transition-colors"
+              >
                 GitHub
               </a>
               <a href="#" className="block text-lg border-b border-off-white/20 pb-4 hover:border-accent hover:text-accent transition-colors">

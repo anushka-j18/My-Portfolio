@@ -13,11 +13,13 @@ const educationData = [
     institution: 'Thakur College of Science and Commerce',
     degree: 'Class XII (Higher Secondary)',
     stream: 'Science',
+    board: 'Maharashtra State Board (MSBSHSE)',
     location: 'Mumbai, Maharashtra',
   },
   {
     institution: 'Thakur Public School',
     degree: 'Class X (Secondary School)',
+    board: 'ICSE Board',
     location: 'Mumbai, Maharashtra',
   },
 ];
@@ -75,8 +77,14 @@ const Education = () => {
                 </p>
 
                 {edu.stream && (
-                  <p className="text-xs font-mono uppercase tracking-widest text-deep-dark/50 mb-2">
-                    {edu.stream}
+                  <p className="text-xs font-mono uppercase tracking-widest text-deep-dark/50 mb-1">
+                    Stream: {edu.stream}
+                  </p>
+                )}
+
+                {edu.board && (
+                  <p className="text-xs font-mono uppercase tracking-wider text-deep-dark/60 mb-2">
+                    {edu.board}
                   </p>
                 )}
 

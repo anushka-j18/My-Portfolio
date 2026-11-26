@@ -39,9 +39,30 @@ const Contact = () => {
         </p>
         
         <div className="flex gap-8 text-sm font-semibold tracking-widest uppercase">
-          <a href="#" className="hover:text-accent transition-colors">LinkedIn</a>
-          <a href="#" className="hover:text-accent transition-colors">GitHub</a>
-          <a href="/resume.pdf" target="_blank" className="hover:text-accent transition-colors">Resume</a>
+          <a 
+            href="https://www.linkedin.com/in/anushka-joshi-b0209028a/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-accent transition-colors"
+          >
+            LinkedIn
+          </a>
+          <a 
+            href="https://github.com/anushka-j18" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-accent transition-colors"
+          >
+            GitHub
+          </a>
+          <a 
+            href="/resume.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-accent transition-colors"
+          >
+            Resume
+          </a>
         </div>
       </footer>
     </section>
