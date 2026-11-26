@@ -24,13 +24,13 @@ const HeroSection = () => {
         >
           <div>
             <p className="text-xs font-semibold tracking-widest-lg uppercase text-accent mb-8">The Developer</p>
-            <ul className="space-y-3 text-xs font-mono uppercase tracking-wider text-deep-dark/70">
-              <li>CSE UNDERGRADUATE · 2027</li>
-              <li>FULL-STACK DEVELOPER</li>
-              <li>AI / GENAI ENTHUSIAST</li>
-              <li>BACKEND & SYSTEM DESIGN</li>
-              <li>HACKATHON RUNNER-UP</li>
-              <li>INNOVAHACK FINALIST</li>
+            <ul className="space-y-4 text-sm font-medium text-deep-dark/70">
+              <li>CSE Undergraduate · 2027</li>
+              <li>Full-Stack Developer</li>
+              <li>AI / GenAI Enthusiast</li>
+              <li>Backend & System Design</li>
+              <li>Hackathon Runner-Up</li>
+              <li>InnovaHack Finalist</li>
             </ul>
           </div>
           <div className="text-xs tracking-widest uppercase text-deep-dark/40 font-semibold">
