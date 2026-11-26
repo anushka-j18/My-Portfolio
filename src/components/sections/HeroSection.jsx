@@ -24,14 +24,13 @@ const HeroSection = () => {
         >
           <div>
             <p className="text-xs font-semibold tracking-widest-lg uppercase text-accent mb-8">Editor's Note</p>
-            <ul className="space-y-4 text-sm font-medium text-deep-dark/70">
-              <li>Final Year CSE Student</li>
-              <li>Full-Stack MERN Developer</li>
-              <li>AI Builder</li>
-              <li>Hackathon</li>
+            <ul className="space-y-3 text-xs font-mono uppercase tracking-wider text-deep-dark/70">
+              <li>CSE Undergraduate</li>
+              <li>Full-Stack & FastAPI</li>
+              <li>Applied AI & Vision</li>
+              <li>Hackathon Winner</li>
+              <li>Linpack Event Lead</li>
               <li>NSS Press Lead</li>
-              <li>Mystery Novel Reader</li>
-              <li>Always Learning</li>
             </ul>
           </div>
           <div className="text-xs tracking-widest uppercase text-deep-dark/40 font-semibold">
@@ -77,21 +76,15 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.7 }}
-              className="space-y-2 text-deep-dark/80 text-lg mb-8 font-medium"
+              className="mb-8"
             >
-              <p>Computer Science Engineering Undergraduate</p>
-              <p>Software Engineer</p>
-              <p>AI Enthusiast</p>
+              <p className="text-xl md:text-2xl font-serif text-deep-dark mb-2 font-medium">
+                Full-Stack Engineer & AI Builder
+              </p>
+              <p className="text-base text-deep-dark/70 max-w-md leading-relaxed font-serif">
+                Undergraduate in Computer Science & Engineering. Building scalable full-stack web platforms, multi-agent AI systems, and optimized computer vision pipelines.
+              </p>
             </motion.div>
-
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.8 }}
-              className="text-lg text-deep-dark/60 max-w-md leading-relaxed mb-12"
-            >
-              Designing seamless experiences. Engineering scalable MERN systems. Building intelligent AI solutions.
-            </motion.p>
 
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -111,23 +104,23 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.0 }}
-              className="mt-16 pt-8 border-t border-deep-dark/10 grid grid-cols-2 gap-y-8 gap-x-4 max-w-lg"
+              className="mt-12 pt-6 border-t border-deep-dark/10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-lg"
             >
               <div>
-                <div className="text-3xl font-serif text-deep-dark mb-1">15+</div>
-                <div className="text-[10px] tracking-widest uppercase font-semibold text-deep-dark/50">Projects Built</div>
+                <div className="text-2xl font-serif text-deep-dark mb-0.5">8+</div>
+                <div className="text-[10px] tracking-widest uppercase font-semibold text-deep-dark/50">Featured Projects</div>
               </div>
               <div>
-                <div className="text-3xl font-serif text-deep-dark mb-1">2x</div>
-                <div className="text-[10px] tracking-widest uppercase font-semibold text-deep-dark/50">Hackathons</div>
+                <div className="text-2xl font-serif text-deep-dark mb-0.5">3x</div>
+                <div className="text-[10px] tracking-widest uppercase font-semibold text-deep-dark/50">Hackathon Honors</div>
               </div>
               <div>
-                <div className="text-3xl font-serif text-deep-dark mb-1">300+</div>
+                <div className="text-2xl font-serif text-deep-dark mb-0.5">300+</div>
                 <div className="text-[10px] tracking-widest uppercase font-semibold text-deep-dark/50">DSA Problems</div>
               </div>
               <div>
-                <div className="text-3xl font-serif text-deep-dark mb-1">2+</div>
-                <div className="text-[10px] tracking-widest uppercase font-semibold text-deep-dark/50">Years of Coding</div>
+                <div className="text-2xl font-serif text-deep-dark mb-0.5">Solo</div>
+                <div className="text-[10px] tracking-widest uppercase font-semibold text-deep-dark/50">Intern Platform</div>
               </div>
             </motion.div>
           </div>

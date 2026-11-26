@@ -49,52 +49,47 @@ const ExperienceTimeline = () => {
               </span>
             </div>
             
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-6">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-4">
               <h4 className="text-sm md:text-base font-medium text-deep-dark/60 uppercase tracking-widest">
-                VOLITIONSPHERE IT SERVICES LLP • FULL-STACK AI-ASSISTED ANSWER-SHEET EVALUATION PLATFORM
+                VOLITIONSPHERE IT SERVICES LLP • FULL-STACK AI EVALUATION PLATFORM
               </h4>
               <span className="text-xs font-mono tracking-wider uppercase text-accent font-semibold">
                 [ Solo Project • End-to-End Ownership ]
               </span>
             </div>
 
-            <p className="font-serif text-lg leading-relaxed text-deep-dark/80 mb-8 max-w-4xl">
-              Independently designed and developed a full-stack AI-assisted answer-sheet evaluation platform during my internship at VolitionSphere IT Services LLP. Took ownership of the project end-to-end, working independently across frontend development, backend implementation, MongoDB database design, feature development, AI integration, and application testing.
+            {/* Concise 1-2 sentence overview */}
+            <p className="font-serif text-lg leading-relaxed text-deep-dark/80 mb-6 max-w-4xl">
+              Independently designed, developed, and tested a full-stack AI answer-sheet evaluation platform with complete solo ownership across frontend, backend APIs, and database architecture.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-deep-dark/80 mb-8">
-              <div>
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">
-                  Responsibilities & Full-Stack Development
-                </h5>
-                <p className="font-serif text-lg leading-relaxed mb-6">
-                  Solely developed the full-stack application, taking complete ownership of its implementation and end-to-end functionality. Built and integrated frontend and backend components using Next.js, React.js, and FastAPI.
-                </p>
-                
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">
-                  Database Design & Backend APIs
-                </h5>
-                <p className="font-serif text-lg leading-relaxed">
-                  Designed and implemented the MongoDB database, creating and managing collections and data structures for teachers, students, and application entities. Implemented backend functionality, RESTful APIs, and database operations.
-                </p>
-              </div>
-
-              <div>
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">
-                  AI & OCR Integration
-                </h5>
-                <p className="font-serif text-lg leading-relaxed mb-6">
-                  Worked on OCR-based text extraction for processing and digitizing answer sheets. Implemented and integrated AI-assisted assessment workflows for automated evaluation.
-                </p>
-                
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">
-                  Feature Implementation & Testing
-                </h5>
-                <p className="font-serif text-lg leading-relaxed">
-                  Independently developed and integrated application features across different modules. Conducted application testing, identified bugs, resolved issues, and validated implemented features.
-                </p>
-              </div>
-            </div>
+            {/* 4 Impactful Responsibilities Bullets */}
+            <ul className="space-y-3 font-serif text-lg text-deep-dark/85 mb-8 max-w-4xl">
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>
+                  <strong className="font-semibold text-deep-dark">Full-Stack Development:</strong> Solely built the application end-to-end using Next.js, React.js, and FastAPI, delivering seamless teacher workflows and evaluation interfaces.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>
+                  <strong className="font-semibold text-deep-dark">MongoDB Database Design:</strong> Architected collections and data schemas for teachers, students, and evaluation records with optimized queries and RESTful APIs.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>
+                  <strong className="font-semibold text-deep-dark">AI & OCR Integration:</strong> Integrated OCR extraction pipelines with LLM APIs to automate rubric-based handwritten answer-sheet grading.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>
+                  <strong className="font-semibold text-deep-dark">Feature Development & Testing:</strong> Built role-based teacher review workflows with manual score overrides, and conducted testing across 100 test papers to validate accuracy.
+                </span>
+              </li>
+            </ul>
 
             {/* Tech Stack and View Certificate */}
             <div className="pt-4 border-t border-deep-dark/10 flex flex-wrap items-center justify-between gap-4">
@@ -120,17 +115,26 @@ const ExperienceTimeline = () => {
             
             <div className="flex flex-col md:flex-row gap-4 md:gap-12 items-baseline mb-4">
               <h3 className="text-3xl md:text-4xl font-serif text-deep-dark">Press Lead</h3>
-              <span className="text-sm font-semibold tracking-widest uppercase text-accent shrink-0">2024 - 2025</span>
+              <span className="text-sm font-semibold tracking-widest uppercase text-accent shrink-0">2024 – 2025</span>
             </div>
             
             <h4 className="text-sm md:text-base font-medium text-deep-dark/60 uppercase tracking-widest mb-6">
               NATIONAL SERVICE SCHEME (NSS) • COMMUNITY LEADERSHIP
             </h4>
             
-            <ul className="list-disc list-outside ml-4 font-serif text-lg text-deep-dark/80 space-y-3">
-              <li className="leading-relaxed pl-2">Prepared and published 5+ press reports covering university and community service initiatives.</li>
-              <li className="leading-relaxed pl-2">Played an active role in a state-level government-supported tree plantation drive, contributing to environmental sustainability efforts.</li>
-              <li className="leading-relaxed pl-2">Collaborated with multidisciplinary teams to organize and document large-scale social impact events.</li>
+            <ul className="space-y-3 font-serif text-lg text-deep-dark/85 max-w-4xl">
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>Published 5+ official press reports covering university initiatives and social outreach programs.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>Organized media documentation and volunteer coordination for state-level tree plantation drives.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>Collaborated with multidisciplinary teams to organize and document large-scale campus community events.</span>
+              </li>
             </ul>
           </div>
 
@@ -150,62 +154,54 @@ const ExperienceTimeline = () => {
               TECHNICAL CLUB MANAGEMENT & EVENT LEADERSHIP
             </h4>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-deep-dark/80">
-              <div>
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-3">
-                  Event Planning & Anchoring — December 2024
-                </h5>
-                <ul className="list-disc list-outside ml-4 font-serif text-lg leading-relaxed space-y-2 mb-6">
-                  <li className="pl-1">Successfully organized and conducted a flagship two-day club event.</li>
-                  <li className="pl-1">Served as the anchor for the entire two-day event, commanding stage proceedings, driving audience engagement, and leading session transitions.</li>
-                  <li className="pl-1">Managed cross-functional coordination and ensured seamless communication throughout both days.</li>
-                </ul>
-                
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-3">
-                  Event Planning & Execution — February 2026
-                </h5>
-                <ul className="list-disc list-outside ml-4 font-serif text-lg leading-relaxed space-y-2">
-                  <li className="pl-1">Played a key role in successfully organizing and executing another major club event.</li>
-                  <li className="pl-1">Handled end-to-end task planning, oversaw activity timelines, and ensured smooth operational progression.</li>
-                  <li className="pl-1">Coordinated responsibilities and managed on-ground activities to deliver successful execution.</li>
-                </ul>
-              </div>
+            <ul className="space-y-3 font-serif text-lg text-deep-dark/85 mb-8 max-w-4xl">
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>
+                  <strong className="font-semibold text-deep-dark">Two-Day Event Anchoring (Dec 2024):</strong> Served as main stage anchor and host for the two-day flagship club event, driving audience engagement and directing real-time stage proceedings.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>
+                  <strong className="font-semibold text-deep-dark">Event Planning & Execution (Feb 2026):</strong> Managed task planning, operational progression, and on-ground volunteer coordination for a major technical club event.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>
+                  <strong className="font-semibold text-deep-dark">Team Coordination & Logistics:</strong> Oversaw cross-functional communication, logistics scheduling, and real-time operational troubleshooting.
+                </span>
+              </li>
+            </ul>
 
-              <div>
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-3">
-                  Core Leadership & Execution
-                </h5>
-                <p className="font-serif text-lg leading-relaxed mb-6">
-                  Demonstrated ability to take end-to-end responsibility, coordinate multidisciplinary team members, speak confidently in front of large audiences, and deliver flawless execution under real-time event demands.
-                </p>
-                
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-3">
-                  Key Skills Demonstrated
-                </h5>
-                <div className="flex flex-wrap gap-2 pt-1">
-                  {[
-                    'Event Planning & Management',
-                    'Leadership & Coordination',
-                    'Public Speaking & Anchoring',
-                    'Task Management',
-                    'Event Execution',
-                    'Team Coordination',
-                    'Communication',
-                    'Problem Solving',
-                  ].map((skill) => (
-                    <span
-                      key={skill}
-                      className="text-xs font-mono bg-deep-dark/5 text-deep-dark/80 px-2.5 py-1 rounded border border-deep-dark/5"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
+            {/* Key Skills Badges */}
+            <div className="mb-8">
+              <div className="text-[10px] font-mono uppercase tracking-widest text-deep-dark/50 mb-2 font-semibold">
+                Demonstrated Skills
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  'Event Planning & Management',
+                  'Public Speaking & Anchoring',
+                  'Leadership & Coordination',
+                  'Task Management',
+                  'Event Execution',
+                  'Team Coordination',
+                  'Problem Solving'
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="text-xs font-mono bg-deep-dark/5 text-deep-dark/80 px-2.5 py-1 rounded border border-deep-dark/10"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
             </div>
 
             {/* Appointment Letter Action Bar */}
-            <div className="mt-8 pt-4 border-t border-deep-dark/10 flex flex-wrap items-center justify-between gap-4">
+            <div className="pt-4 border-t border-deep-dark/10 flex flex-wrap items-center justify-between gap-4">
               <div className="text-xs font-mono uppercase tracking-widest text-deep-dark/60">
                 <span className="font-semibold text-deep-dark/40 mr-2">APPOINTMENT:</span>
                 <span>Core Member (Event Management Team) · Academic Year 2024–25</span>
@@ -228,39 +224,33 @@ const ExperienceTimeline = () => {
             
             <div className="flex flex-col md:flex-row gap-4 md:gap-12 items-baseline mb-4">
               <h3 className="text-3xl md:text-4xl font-serif text-deep-dark">Hackathon Participant & Builder</h3>
-              <span className="text-sm font-semibold tracking-widest uppercase text-accent shrink-0">2023 - 2026</span>
+              <span className="text-sm font-semibold tracking-widest uppercase text-accent shrink-0">2023 – 2026</span>
             </div>
             
             <h4 className="text-sm md:text-base font-medium text-deep-dark/60 uppercase tracking-widest mb-6">
-              VARIOUS ORGANIZATIONS • RAPID PROTOTYPING & SYSTEM ARCHITECTURE
+              RAPID PROTOTYPING & SYSTEM ARCHITECTURE
             </h4>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-deep-dark/80">
-              <div>
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Responsibilities</h5>
-                <p className="font-serif text-lg leading-relaxed mb-6">
-                  Architecting and developing rapid prototypes under strict deadlines.
-                </p>
-                
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Key Learnings</h5>
-                <p className="font-serif text-lg leading-relaxed">
-                  Rapid prototyping, system architecture under pressure, and effective pitching.
-                </p>
-              </div>
-
-              <div>
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Impact</h5>
-                <p className="font-serif text-lg leading-relaxed mb-6">
-                  Built several MVP applications addressing real-world problems like education and sustainability.
-                </p>
-                
-                <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-2">Achievements</h5>
-                <ul className="list-disc list-inside font-serif text-lg space-y-1">
-                  <li>2nd Runner-Up E-Commerce Platform</li>
-                  <li>Hackathon Finalist</li>
-                </ul>
-              </div>
-            </div>
+            <ul className="space-y-3 font-serif text-lg text-deep-dark/85 max-w-4xl">
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>
+                  <strong className="font-semibold text-deep-dark">PromptX Hackathon Winner:</strong> Designed, built, and deployed the Smart Study Planner MVP in under 75 minutes.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>
+                  <strong className="font-semibold text-deep-dark">2nd Runner-Up at Linpack Hackathon:</strong> Developed XURVA, a high-performance full-stack MERN e-commerce architecture with Stripe checkout.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-accent font-bold text-xs mt-1.5 shrink-0">✦</span>
+                <span>
+                  <strong className="font-semibold text-deep-dark">InnovaHack Finalist:</strong> Built Nucleus, a high-throughput GenAI context compression engine scaling context capacity to 200,000 characters.
+                </span>
+              </li>
+            </ul>
           </div>
 
         </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   AiEvaluationVisual,
   NucleusVisual,
@@ -25,29 +25,25 @@ const projects = [
     title: 'AI Evaluation System',
     subtitle: 'AI-Powered Answer Sheet Evaluation System',
     filterCategories: ['AI / GenAI', 'Full Stack'],
-    note: '🏆 Internship Project • VolitionSphere IT Services LLP (1/05/2026 – 30/06/2026)',
-    description: (
-      <>
-        <span className="text-accent font-semibold">PROBLEM:</span> Manual evaluation is time-consuming, inconsistent, and difficult to scale across large classrooms.{'\n\n'}
-        Educational institutions spend countless hours manually evaluating handwritten answer sheets. AI Evaluation System streamlines this workflow by combining OCR, AI-assisted evaluation, and a role-based dashboard into a single platform that improves consistency, reduces manual effort, and provides actionable analytics for educators. Independently designed and developed as an internship project at VolitionSphere IT Services LLP with end-to-end full-stack ownership.
-      </>
-    ),
-    tech: ['Next.js', 'React.js', 'Python', 'FastAPI', 'PostgreSQL', 'OCR', 'LLM APIs'],
-    features: [
-      'Automated answer-sheet text extraction using OCR',
-      'AI-powered answer evaluation and grading',
-      'Configurable grading modes',
-      'Human review and verification workflow',
-      'Teacher-oriented evaluation dashboard',
-      'Validation using a collection of 100 test papers'
+    note: '🏆 VolitionSphere Internship • Solo Project',
+    description:
+      'Full-stack AI platform automating handwritten answer-sheet evaluation using OCR and LLMs, featuring role-based teacher review workflows and verified scoring.',
+    tech: ['Next.js', 'React.js', 'FastAPI', 'Python', 'MongoDB', 'OCR', 'LLM APIs'],
+    highlights: [
+      'Solo full-stack development with end-to-end ownership across frontend, backend APIs, and MongoDB schemas.',
+      'Automated OCR extraction pipeline and rubric-driven LLM scoring validated on 100 test papers.',
+      'Role-based teacher dashboard with manual score verification, feedback overrides, and batch export.'
     ],
-    timeline: { duration: '2 Months', period: '1/05/2026 – 30/06/2026' },
+    extendedFeatures: [
+      'Configurable grading modes tailored for various subject rubrics.',
+      'Automated fallback mechanisms ensuring human review on low-confidence extractions.'
+    ],
     challenges: [
-      'Extracting handwritten answers reliably across varied handwriting styles',
-      'Designing scalable evaluation workflows with automated fallback to human review',
-      'Maintaining evaluation consistency through strict rubric-prompt engineering',
-      'Managing large teacher allocations and batch CSV exports'
+      'Extracting handwritten answers reliably across diverse handwriting styles.',
+      'Strict rubric prompt engineering to prevent model hallucination and grading drift.',
+      'Architecting scalable MongoDB collections for teachers, students, and evaluation records.'
     ],
+    timeline: { duration: '2 Months', period: '1 May 2026 – 30 June 2026' },
     githubLink: 'https://github.com/anushka-j18/AI-EVALUATION-SYSTEM',
     liveLink: 'https://ai-evaluation-system-1mz4.vercel.app/',
     experienceLink: '#experience',
@@ -58,28 +54,24 @@ const projects = [
     title: 'Nucleus',
     subtitle: 'GenAI Context Compression Engine',
     filterCategories: ['AI / GenAI', 'Backend Engineering'],
-    note: '🏆 Selected for the InnovaHack Final Round',
-    description: (
-      <>
-        <span className="text-accent font-semibold">PROBLEM:</span> LLM context windows quickly saturate during extended conversational sessions and multi-turn workflows, leading to excessive token consumption and memory degradation.{'\n\n'}
-        Nucleus is a GenAI-powered context compression engine designed to optimize large language model context utilization through intelligent chunking and compression strategies. The engine scales supported context capacity from approximately 500 to 200,000 characters while preserving essential semantic memory through a high-performance FastAPI backend.
-      </>
-    ),
+    note: '🏆 InnovaHack Finalist',
+    description:
+      'High-performance context compression engine that optimizes LLM token efficiency and memory retention through two-stage intelligent semantic chunking.',
     tech: ['Python', 'FastAPI', 'LLMs', 'Embeddings', 'Pydantic'],
-    features: [
-      'Two-stage intelligent chunking and compression',
-      'Optimized context management',
-      'Capacity scaled from 500 to 200,000 characters',
-      'Conversation history management within context window',
-      'FastAPI-based backend architecture',
-      'Comprehensive verification and testing'
+    highlights: [
+      'Scaled supported context capacity from ~500 to 200,000 characters while preserving critical semantic context.',
+      'Engineered two-stage semantic chunking and embedding retrieval validated with strict Pydantic models.',
+      'Selected as a Finalist in the InnovaHack hackathon among competitive nationwide submissions.'
+    ],
+    extendedFeatures: [
+      'Intelligent conversation history management within tight LLM context windows.',
+      'FastAPI-based async architecture designed for high-throughput batch compression.'
+    ],
+    challenges: [
+      'Preserving semantic continuity while compressing long conversational histories.',
+      'Balancing embedding lookups with ultra-low latency response requirements.'
     ],
     timeline: { duration: 'Hackathon', period: 'InnovaHack Finalist' },
-    challenges: [
-      'Preserving semantic continuity while compressing long conversational histories',
-      'Balancing embedding lookups with ultra-low latency response requirements',
-      'Handling arbitrary character length inputs safely with strict Pydantic schemas'
-    ],
     VisualComponent: NucleusVisual,
   },
   {
@@ -87,28 +79,24 @@ const projects = [
     title: 'FactForge',
     subtitle: 'AI-Powered Fact Verification System',
     filterCategories: ['AI / GenAI', 'Full Stack'],
-    description: (
-      <>
-        <span className="text-accent font-semibold">PROBLEM:</span> Manual fact-checking of sprawling digital claims and unstructured information is labor-intensive, slow, and prone to subjective bias.{'\n\n'}
-        FactForge is an intelligent multi-agent fact verification platform designed to research, analyze, verify, and synthesize information through coordinated AI agents. By orchestrating dedicated Research & Retrieval Agents and Verification & Detection Agents, it generates transparent confidence scores and structured audit logs for ingested content.
-      </>
-    ),
-    tech: ['Next.js', 'React.js', 'Tailwind CSS', 'Python', 'FastAPI', 'PostgreSQL', 'Grok API', 'OCR'],
-    features: [
-      'Research and Retrieval Agent',
-      'Verification and Detection Agent',
-      'Information synthesis',
-      'Confidence scoring mechanism',
-      'Centralized orchestration and state management',
-      'Transition tracking and structured logging',
-      'OCR and local LLM integration exploration'
+    note: 'Multi-Agent AI Architecture',
+    description:
+      'Autonomous multi-agent platform coordinating specialized AI agents to cross-examine digital claims, analyze evidence, and generate transparent confidence ratings.',
+    tech: ['Next.js', 'React.js', 'FastAPI', 'Python', 'PostgreSQL', 'Grok API', 'OCR'],
+    highlights: [
+      'Multi-agent architecture coordinating dedicated Retrieval, Verification, and Synthesis agents.',
+      'Automated evidence cross-referencing generating calibrated, objective confidence ratings.',
+      'Centralized orchestration state machine with transition tracking and structured audit logging.'
     ],
-    timeline: { duration: 'Multi-Agent AI', period: 'Production Research' },
+    extendedFeatures: [
+      'Local LLM inference and OCR exploration for offline document fact-checking.',
+      'Conflict resolution algorithms for reconciling contradictory source claims.'
+    ],
     challenges: [
-      'Orchestrating concurrent agent tasks without race conditions or deadlocks',
-      'Synthesizing conflicting evidentiary sources into calibrated confidence ratings',
-      'Structured logging of agent transitions for real-time auditability'
+      'Orchestrating concurrent agent tasks without race conditions or state desynchronization.',
+      'Synthesizing conflicting evidentiary sources into calibrated confidence ratings.'
     ],
+    timeline: { duration: 'Multi-Agent AI', period: 'Research & Production' },
     VisualComponent: FactForgeVisual,
   },
   {
@@ -116,29 +104,24 @@ const projects = [
     title: 'XURVA',
     subtitle: 'High-Performance E-Commerce Platform',
     filterCategories: ['Full Stack'],
-    note: '🏆 2nd Runner-Up • Linpack Intra-Club Hackathon',
-    description: (
-      <>
-        <span className="text-accent font-semibold">PROBLEM:</span> Modern e-commerce platforms struggle with sluggish load times, atomic cart synchronization, and complex checkout friction.{'\n\n'}
-        Built as a full-stack MERN application, this platform delivers a complete online shopping experience with product management, shopping cart functionality, backend APIs, and secure payment integration. Designed with scalability, performance, and user experience at its core, the project handles the complete order lifecycle from product discovery to checkout.
-      </>
-    ),
+    note: '🏆 2nd Runner-Up • Linpack Hackathon',
+    description:
+      'Production-grade MERN shopping platform built with atomic inventory management, JWT user authentication, and secure Stripe payment processing.',
     tech: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Stripe API'],
-    features: [
-      'Product browsing and listing',
-      'Shopping cart management',
-      'REST API integration',
-      'MongoDB database integration',
-      'Stripe payment gateway integration',
-      'Responsive user interface'
+    highlights: [
+      'Complete end-to-end MERN architecture managing product catalog, inventory state, and order lifecycles.',
+      'Integrated Stripe Checkout with secure webhook verification and atomic inventory updates.',
+      'Awarded 2nd Runner-Up at the Linpack Intra-Club Hackathon for architecture and responsive UX.'
+    ],
+    extendedFeatures: [
+      'JWT authentication with secure HTTP-only cookies and role-based route guards.',
+      'Optimistic UI state updates for immediate cart and checkout feedback.'
+    ],
+    challenges: [
+      'Designing a scalable REST API architecture for concurrent order placement.',
+      'Maintaining absolute database consistency during active checkout sessions.'
     ],
     timeline: { duration: '1 Month', period: 'Dec 2025 – Jan 2026' },
-    challenges: [
-      'Designing a scalable REST API architecture for product, order, and user management',
-      'Implementing secure JWT authentication with protected routes and role-based access',
-      'Integrating Stripe Checkout while ensuring reliable payment verification',
-      'Maintaining inventory consistency during concurrent order placement'
-    ],
     githubLink: 'https://github.com/anushka-j18/XURVA',
     liveLink: 'https://v0-e-commerce-website-v0.vercel.app/',
     VisualComponent: EcommerceVisual,
@@ -146,29 +129,26 @@ const projects = [
   {
     id: '05',
     title: 'Study Planner',
-    subtitle: 'Smart Study Planner Web App',
+    subtitle: 'Smart Student Productivity Web App',
     filterCategories: ['Full Stack'],
-    note: '🏆 PromptX Hackathon Winner',
-    description: (
-      <>
-        <span className="text-accent font-semibold">PROBLEM:</span> PromptX Hackathon Challenge: Design and build a fully functional project under a strict 75-minute limit.{'\n\n'}
-        A modern, intuitive study planner web app built with Next.js and React to help students manage classes, assignments, and deadlines with smart reminders. Includes an interactive weekly timetable with drag-and-drop, assignment tracker, built-in Pomodoro timer, and a grade calculator.
-      </>
-    ),
+    note: '🏆 PromptX Hackathon Winner (75 Mins)',
+    description:
+      'Intuitive academic scheduling platform featuring interactive drag-and-drop weekly timetables, built-in Pomodoro timers, and automated grade calculations.',
     tech: ['Next.js 14', 'React 18', 'TypeScript', 'Tailwind CSS', 'Supabase'],
-    features: [
-      'Interactive weekly timetable with drag-and-drop',
-      'Assignment tracker',
-      'Customizable reminders',
-      'Pomodoro study timer',
-      'Grade calculator'
+    highlights: [
+      'Designed, built, and deployed end-to-end within a strict 75-minute hackathon challenge.',
+      'Interactive weekly timetable with drag-and-drop rescheduling and assignment tracking.',
+      'Won 1st Place at the PromptX Hackathon organized by the CSI chapter.'
     ],
-    timeline: { duration: '75 Mins', period: 'Hackathon Event' },
+    extendedFeatures: [
+      'Customizable reminder notifications and Pomodoro study timer sessions.',
+      'Supabase PostgreSQL integration with real-time state synchronization.'
+    ],
     challenges: [
-      'Designing and building a fully functional project within a strict 75-minute limit',
-      'Implementing drag-and-drop for the weekly timetable quickly',
-      'Integrating a built-in Pomodoro timer and assignment tracker seamlessly'
+      'Delivering a fully responsive, bug-free web application under high time pressure.',
+      'Implementing fluid drag-and-drop timetable reordering without layout glitches.'
     ],
+    timeline: { duration: '75 Mins', period: 'PromptX Hackathon Winner' },
     githubLink: 'https://github.com/anushka-j18/Studyplannerr',
     liveLink: 'https://v0-study-planner-website-57.vercel.app/',
     VisualComponent: StudyPlannerVisual,
@@ -178,28 +158,24 @@ const projects = [
     title: 'Histori.Ai',
     subtitle: 'AI-Powered Heritage & Monument Discovery',
     filterCategories: ['AI / GenAI', 'Computer Vision'],
-    note: 'Role: Frontend Developer',
-    description: (
-      <>
-        <span className="text-accent font-semibold">PROBLEM:</span> Historical tourism lacks engaging, real-time contextual information and intuitive visual representations of monuments on-site.{'\n\n'}
-        An AI-powered heritage discovery platform that combines computer vision, interactive mapping, 3D visualization, and conversational AI to make monument exploration more engaging. By scanning a landmark, the AI instantly recognizes the location with 92% reported accuracy, providing rich historical context, interactive 3D monument visualizations, and smart itinerary planning.
-      </>
-    ),
-    tech: ['Python', 'YOLOv8', 'React.js', 'Three.js', 'React Three Fiber', 'Google Maps API', 'OpenAI API'],
-    features: [
-      'AI-powered monument recognition using YOLOv8',
-      'Reported monument detection accuracy of 92%',
-      'Interactive smart map using Google Maps API',
-      'AI-powered itinerary planning',
-      'Interactive 3D monument visualization',
-      'Conversational AI assistance'
+    note: 'Role: Frontend Developer • 92% Accuracy',
+    description:
+      'Heritage exploration platform combining YOLOv8 computer vision for instant monument recognition with interactive 3D visualizations and AI itinerary guides.',
+    tech: ['React.js', 'Three.js', 'Python', 'YOLOv8', 'Google Maps API', 'OpenAI API'],
+    highlights: [
+      'Engineered interactive 3D monument visualizations using React Three Fiber and Three.js.',
+      'Integrated custom YOLOv8 model achieving 92% monument detection accuracy.',
+      'Connected Google Maps routing with OpenAI conversational assistance for smart itineraries.'
+    ],
+    extendedFeatures: [
+      'Optimized high-poly 3D mesh rendering for seamless mobile and desktop frame rates.',
+      'Context-aware conversational bot delivering localized historical trivia on demand.'
+    ],
+    challenges: [
+      'Rendering complex 3D monument meshes with minimal latency on mobile browsers.',
+      'Ensuring high detection reliability across diverse outdoor lighting conditions.'
     ],
     timeline: { duration: '2 Months', period: 'Feb 2026 – Apr 2026' },
-    challenges: [
-      'Rendering complex 3D monument meshes with minimal latency on web browsers',
-      'Ensuring high accuracy across varying lighting conditions with YOLOv8',
-      'Synchronizing Google Maps API routing with conversational itinerary prompts'
-    ],
     VisualComponent: HistoriAiVisual,
   },
   {
@@ -207,50 +183,49 @@ const projects = [
     title: 'OrthoScan',
     subtitle: 'AI-Based Orthopedic Image Analysis',
     filterCategories: ['AI / GenAI', 'Computer Vision'],
-    description: (
-      <>
-        <span className="text-accent font-semibold">PROBLEM:</span> Medical imaging requires high-precision localization, rapid inference times, and portable model runtimes suitable for clinical evaluation.{'\n\n'}
-        A computer vision-based project focused on orthopedic image analysis using object detection models and optimized ONNX inference. Designed to evaluate radiological scans with rapid inference and reliable localization for diagnostic exploration.
-      </>
-    ),
-    tech: ['YOLOv7', 'ONNX', 'Python'],
-    features: [
-      'YOLOv7-based computer vision pipeline',
-      'ONNX model integration',
-      'Image inference and analysis',
-      'Model deployment and optimization exploration'
+    note: 'Computer Vision & ONNX Optimization',
+    description:
+      'Radiological computer vision pipeline utilizing YOLOv7 and optimized ONNX runtime for rapid, high-precision orthopedic radiographic analysis.',
+    tech: ['Python', 'YOLOv7', 'ONNX Runtime', 'OpenCV'],
+    highlights: [
+      'YOLOv7 object detection pipeline trained for localized radiographic fracture detection.',
+      'Optimized PyTorch model export to ONNX runtime for rapid, low-latency CPU/GPU inference.',
+      'Standardized medical image pre-processing and contrast normalization pipeline.'
+    ],
+    extendedFeatures: [
+      'Benchmarked inference speed across raw PyTorch vs. quantized ONNX models.',
+      'Evaluated precision-recall curves on challenging radiographic joint scans.'
+    ],
+    challenges: [
+      'Exporting PyTorch weights to quantized ONNX format for accelerated inference.',
+      'Evaluating precision boundaries for orthopedic joint and fracture localization.'
     ],
     timeline: { duration: 'Computer Vision', period: 'Research MVP' },
-    challenges: [
-      'Exporting PyTorch weights to quantized ONNX format for accelerated CPU/GPU inference',
-      'Pre-processing high-resolution radiographic scans with uniform normalization',
-      'Evaluating precision boundaries for orthopedic joint and fracture localization'
-    ],
     VisualComponent: OrthoScanVisual,
   },
   {
     id: '08',
     title: 'Badminton Score Counter',
-    subtitle: 'A Simple and Responsive Score Counter',
+    subtitle: 'Responsive Match-Tracking Web App',
     filterCategories: ['Full Stack'],
-    description: (
-      <>
-        <span className="text-accent font-semibold">PROBLEM:</span> Players needed a lightweight, intuitive way to record scores, reset games, and adjust settings like points-to-win during casual and practice matches.{'\n\n'}
-        A simple and responsive Badminton Score Counter built for quick and accurate match tracking. The app allows players to record scores, reset games, adjust settings such as points-to-win, and view match history with ease. Designed to be lightweight, intuitive, and ideal for both casual and practice matches.
-      </>
-    ),
-    tech: ['v0', 'Vercel', 'React', 'Tailwind CSS'],
-    features: [
-      'Record scores and reset games',
-      'Adjust points-to-win settings',
-      'View match history with ease',
-      'Responsive mobile-first design'
+    note: 'Side Project • MatchMeter',
+    description:
+      'Clean, responsive scorekeeping application built for effortless match tracking, customizable points-to-win rules, and instant game resets.',
+    tech: ['React', 'Tailwind CSS', 'Vercel'],
+    highlights: [
+      'Touch-friendly interface optimized for rapid courtside mobile score entry.',
+      'Customizable match rules including sudden death, points-to-win, and set histories.',
+      'Zero-latency client-side state management with instant game resets.'
+    ],
+    extendedFeatures: [
+      'Complete historical set record keeping and score summary view.',
+      'Lightweight, responsive layout tested across mobile viewports.'
+    ],
+    challenges: [
+      'Designing an intuitive and accessible UI for quick score recording under physical activity.',
+      'Managing application state cleanly for match history and game resets.'
     ],
     timeline: { duration: '1 Day', period: 'Side Project' },
-    challenges: [
-      'Designing an intuitive and accessible UI for quick score recording',
-      'Managing application state for match history and game resets'
-    ],
     githubLink: 'https://github.com/anushka-j18/MatchMeter---Badminton-Score-Counter',
     liveLink: 'https://v0-badminton-score-counter.vercel.app/',
     VisualComponent: BadmintonVisual,
@@ -259,6 +234,11 @@ const projects = [
 
 const EngineeringStories = () => {
   const [selectedFilter, setSelectedFilter] = useState('All');
+  const [expandedProjects, setExpandedProjects] = useState({});
+
+  const toggleDetails = (id) => {
+    setExpandedProjects((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
 
   const filteredProjects = projects.filter((project) => {
     if (selectedFilter === 'All') return true;
@@ -270,7 +250,7 @@ const EngineeringStories = () => {
       <div className="max-w-[1400px] mx-auto">
         
         {/* Section Header */}
-        <div className="mb-20 flex flex-col md:flex-row justify-between items-end border-b border-deep-dark/20 pb-8 gap-6">
+        <div className="mb-16 flex flex-col md:flex-row justify-between items-end border-b border-deep-dark/20 pb-8 gap-6">
           <div>
             <span className="text-accent text-sm font-semibold tracking-widest-lg uppercase mb-4 block">Section 03</span>
             <h2 className="text-5xl md:text-7xl font-serif">ENGINEERING<br/>STORIES</h2>
@@ -281,9 +261,9 @@ const EngineeringStories = () => {
         </div>
 
         {/* Editorial Category Filter Tabs */}
-        <div className="mb-24 flex flex-wrap items-center gap-6 md:gap-10 border-b border-deep-dark/10 pb-6 text-xs font-semibold tracking-widest uppercase">
+        <div className="mb-20 flex flex-wrap items-center gap-6 md:gap-10 border-b border-deep-dark/10 pb-6 text-xs font-semibold tracking-widest uppercase">
           <span className="text-deep-dark/40">Category /</span>
-          {FILTER_CATEGORIES.map(cat => {
+          {FILTER_CATEGORIES.map((cat) => {
             const isActive = selectedFilter === cat;
             return (
               <button
@@ -298,7 +278,7 @@ const EngineeringStories = () => {
                   <motion.div
                     layoutId="filterIndicator"
                     className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-accent"
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                   />
                 )}
               </button>
@@ -307,13 +287,15 @@ const EngineeringStories = () => {
         </div>
 
         {/* Stories List */}
-        <div className="flex flex-col gap-32">
+        <div className="flex flex-col gap-24">
           {filteredProjects.map((project, index) => {
             const Visual = project.VisualComponent;
+            const isExpanded = !!expandedProjects[project.id];
+
             return (
               <div 
                 key={project.id} 
-                className={`flex flex-col gap-12 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center`}
+                className={`flex flex-col gap-10 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center`}
               >
                 
                 {/* Visual / Architecture Diagram */}
@@ -325,88 +307,142 @@ const EngineeringStories = () => {
                 </div>
 
                 {/* Story Content */}
-                <div className="w-full lg:w-1/2 flex flex-col justify-center xl:px-12">
-                  <div className="text-accent font-serif text-2xl italic mb-4">No. {project.id}</div>
-                  <h3 className="text-4xl md:text-5xl font-serif mb-4 leading-none">{project.title}</h3>
-                  <h4 className="text-lg font-medium text-deep-dark/60 mb-6 uppercase tracking-wide">{project.subtitle}</h4>
-                  
-                  {project.note && (
-                    <p className="text-accent font-semibold text-xs font-mono uppercase tracking-widest mb-6">
-                      {project.note}
-                    </p>
-                  )}
-
-                  <p className="text-lg font-light text-deep-dark/80 leading-relaxed mb-8 whitespace-pre-line">
-                    {project.description}
-                  </p>
-
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-deep-dark/10 pt-8">
-                    <div>
-                      <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-4">Tech Stack</h5>
-                      <ul className="space-y-2 text-sm font-medium">
-                        {project.tech.map(t => <li key={t}>{t}</li>)}
-                      </ul>
-                    </div>
-                    <div>
-                      <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-4">Key Features</h5>
-                      <ul className="space-y-2 text-sm font-medium">
-                        {project.features.map(f => <li key={f}>{f}</li>)}
-                      </ul>
-                    </div>
-                    {project.timeline && (
-                      <div>
-                        <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-4">Timeline</h5>
-                        <div className="space-y-3 text-sm font-medium">
-                          <div>
-                            <span className="block text-deep-dark/60 text-xs uppercase tracking-widest mb-1">Duration</span>
-                            <span>{project.timeline.duration}</span>
-                          </div>
-                          <div className="text-deep-dark/80">
-                            {project.timeline.period}
-                          </div>
-                        </div>
-                      </div>
+                <div className="w-full lg:w-1/2 flex flex-col justify-center xl:px-8">
+                  <div className="flex items-center justify-between gap-4 mb-3">
+                    <span className="text-accent font-serif text-2xl italic">No. {project.id}</span>
+                    {project.note && (
+                      <span className="text-[11px] font-mono tracking-wider uppercase text-accent font-semibold px-2.5 py-0.5 bg-accent/5 rounded border border-accent/20">
+                        {project.note}
+                      </span>
                     )}
                   </div>
 
-                  {project.challenges && (
-                    <div className="mt-8 border-t border-deep-dark/10 pt-8">
-                      <h5 className="text-xs font-semibold tracking-widest uppercase text-deep-dark/40 mb-4">Engineering Challenges</h5>
-                      <ul className="space-y-2 text-sm font-medium text-deep-dark/80 list-disc list-outside ml-4">
-                        {project.challenges.map(c => <li key={c} className="pl-1">{c}</li>)}
-                      </ul>
-                    </div>
-                  )}
+                  <h3 className="text-3xl md:text-4xl font-serif mb-1 leading-tight">{project.title}</h3>
+                  <h4 className="text-xs md:text-sm font-medium text-deep-dark/60 mb-4 uppercase tracking-wider">{project.subtitle}</h4>
 
-                  <div className="mt-10 flex flex-wrap items-center gap-6">
-                    {project.githubLink && (
-                      <a 
-                        href={project.githubLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="text-sm font-semibold tracking-widest uppercase border-b border-deep-dark pb-1 hover:text-accent hover:border-accent transition-colors"
+                  {/* Crisp 2-line description */}
+                  <p className="text-base text-deep-dark/80 leading-relaxed mb-5 font-serif">
+                    {project.description}
+                  </p>
+
+                  {/* Compact Tech Badges */}
+                  <div className="mb-5">
+                    <div className="text-[10px] font-mono uppercase tracking-widest text-deep-dark/50 mb-2 font-semibold">
+                      Tech Stack
+                    </div>
+                    <div className="flex flex-wrap gap-1.5">
+                      {project.tech.map((t) => (
+                        <span 
+                          key={t} 
+                          className="text-xs font-mono bg-deep-dark/5 text-deep-dark/80 px-2 py-0.5 rounded border border-deep-dark/10"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Top 3 Key Highlights */}
+                  <div className="mb-6">
+                    <div className="text-[10px] font-mono uppercase tracking-widest text-deep-dark/50 mb-2 font-semibold">
+                      Key Technical Highlights
+                    </div>
+                    <ul className="space-y-2 text-sm text-deep-dark/85 font-serif">
+                      {project.highlights.map((h, i) => (
+                        <li key={i} className="flex items-start gap-2 leading-snug">
+                          <span className="text-accent font-bold text-xs mt-0.5 shrink-0">✦</span>
+                          <span>{h}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Expandable Details Drawer */}
+                  <AnimatePresence>
+                    {isExpanded && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden border-t border-deep-dark/10 pt-4 mb-6 space-y-4"
                       >
-                        View GitHub
-                      </a>
+                        {project.extendedFeatures && (
+                          <div>
+                            <h5 className="text-[10px] font-mono uppercase tracking-widest text-deep-dark/50 mb-1.5 font-semibold">
+                              Additional Features
+                            </h5>
+                            <ul className="list-disc list-outside ml-4 text-xs font-serif text-deep-dark/80 space-y-1">
+                              {project.extendedFeatures.map((f, i) => (
+                                <li key={i}>{f}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {project.challenges && (
+                          <div>
+                            <h5 className="text-[10px] font-mono uppercase tracking-widest text-deep-dark/50 mb-1.5 font-semibold">
+                              Engineering Challenges Tackled
+                            </h5>
+                            <ul className="list-disc list-outside ml-4 text-xs font-serif text-deep-dark/80 space-y-1">
+                              {project.challenges.map((c, i) => (
+                                <li key={i}>{c}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {project.timeline && (
+                          <div className="text-xs font-mono text-deep-dark/60 pt-2 border-t border-deep-dark/5 flex flex-wrap gap-4">
+                            <span><strong className="text-deep-dark/80">Duration:</strong> {project.timeline.duration}</span>
+                            <span><strong className="text-deep-dark/80">Timeline:</strong> {project.timeline.period}</span>
+                          </div>
+                        )}
+                      </motion.div>
                     )}
-                    {project.liveLink && (
-                      <a 
-                        href={project.liveLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="text-sm font-semibold tracking-widest uppercase border-b border-accent pb-1 text-accent hover:opacity-80 transition-opacity"
-                      >
-                        Live Deployed Link
-                      </a>
-                    )}
-                    {project.experienceLink && (
-                      <a 
-                        href={project.experienceLink} 
-                        className="text-sm font-semibold tracking-widest uppercase border-b border-accent pb-1 text-accent hover:opacity-80 transition-opacity"
-                      >
-                        View in Experience Section →
-                      </a>
-                    )}
+                  </AnimatePresence>
+
+                  {/* Action Bar */}
+                  <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-deep-dark/10">
+                    <button
+                      onClick={() => toggleDetails(project.id)}
+                      className="text-xs font-semibold tracking-widest uppercase border-b border-deep-dark/40 pb-0.5 text-deep-dark/80 hover:text-accent hover:border-accent transition-colors flex items-center gap-1.5 cursor-pointer"
+                    >
+                      <span>{isExpanded ? 'Hide Details' : 'View Details'}</span>
+                      <span>{isExpanded ? '▴' : '▾'}</span>
+                    </button>
+
+                    <div className="flex items-center gap-5">
+                      {project.githubLink && (
+                        <a 
+                          href={project.githubLink} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-xs font-semibold tracking-widest uppercase border-b border-deep-dark pb-0.5 hover:text-accent hover:border-accent transition-colors"
+                        >
+                          GitHub ↗
+                        </a>
+                      )}
+                      {project.liveLink && (
+                        <a 
+                          href={project.liveLink} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-xs font-semibold tracking-widest uppercase border-b border-accent pb-0.5 text-accent hover:opacity-80 transition-opacity"
+                        >
+                          Live Demo ↗
+                        </a>
+                      )}
+                      {project.experienceLink && (
+                        <a 
+                          href={project.experienceLink} 
+                          className="text-xs font-semibold tracking-widest uppercase border-b border-accent pb-0.5 text-accent hover:opacity-80 transition-opacity"
+                        >
+                          Experience →
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
 

@@ -7,16 +7,16 @@ const achievements = [
     title: 'PromptX Winner', 
     category: 'Competition', 
     year: '2025',
-    detail: 'Winner of PromptX Hackathon by CSI chapter VIT Bhopal. Showcased exceptional AI prompt engineering and problem-solving skills.',
+    detail: '1st Place Winner at PromptX Hackathon (CSI chapter). Designed, built, and deployed the Smart Study Planner MVP in 75 minutes.',
     date: 'March 2025',
     link: '#'
   },
   { 
     id: 2,
-    title: 'Hackathon Finalist', 
+    title: 'InnovaHack Finalist', 
     category: 'Development', 
     year: '2024',
-    detail: 'Selected as a finalist in competitive hackathon. Developed a functional MVP addressing real-world challenges.',
+    detail: 'Selected as Finalist at InnovaHack. Engineered Nucleus, a high-throughput GenAI context compression engine scaling to 200k characters.',
     date: '2024',
     link: '#'
   },
@@ -24,55 +24,55 @@ const achievements = [
     id: 3,
     title: '2nd Runner-Up', 
     category: 'Hackathon', 
-    year: '2025',
-    detail: '2nd Runner-Up at Linpack Intra-Club Hackathon. Built a high-performance E-Commerce architecture (XURVA).',
+    year: '2026',
+    detail: '2nd Runner-Up at Linpack Intra-Club Hackathon. Architected XURVA, a high-performance full-stack MERN e-commerce platform with Stripe.',
     date: 'Jan 2026',
     link: '#'
   },
   { 
     id: 4,
-    title: 'Flipkart Grid Participant', 
+    title: 'Flipkart GRId 6.0', 
     category: 'Engineering', 
     year: '2024',
-    detail: 'Participated in Flipkart Grid 6.0 software development track, tackling complex engineering problem statements.',
+    detail: 'Participated in Flipkart GRId 6.0 software development track, tackling large-scale system engineering problem statements.',
     date: '2024',
     link: '#'
   },
   { 
     id: 5,
-    title: 'AI Projects Recognition', 
-    category: 'Innovation', 
-    year: '2025',
-    detail: 'Commended for developing impactful AI tools like Eval.AI and Histori.AI to streamline evaluation and education.',
-    date: '2025',
-    link: '#'
+    title: 'Solo Internship Platform', 
+    category: 'Industry', 
+    year: '2026',
+    detail: 'Solely built and deployed an AI-assisted handwritten evaluation platform for VolitionSphere IT Services LLP across 100 test papers.',
+    date: 'May – Jun 2026',
+    link: '#experience'
   },
   { 
     id: 6,
-    title: 'NSS Leadership', 
-    category: 'NSS', 
-    year: '2024',
-    detail: 'Press Lead for National Service Scheme (NSS). Organized 5+ major events and tree plantation drives.',
-    date: '2024 - 2025',
-    link: '#'
+    title: 'Linpack Leadership', 
+    category: 'Club Leadership', 
+    year: '2024 – 2025',
+    detail: 'Core Member of Event Management Team. Anchored 2-day flagship club event and managed on-ground event planning and execution.',
+    date: '2024 – 2025',
+    link: '#experience'
   },
   { 
     id: 7,
-    title: 'Open Source Contributor', 
+    title: 'NSS Press Lead', 
     category: 'Community', 
-    year: '2025',
-    detail: 'Consistently contributed to various open-source communities, focusing on React and modern web development.',
-    date: '2025',
-    link: '#'
+    year: '2024 – 2025',
+    detail: 'Published 5+ media reports for university and community service, organizing state-level environmental and tree plantation drives.',
+    date: '2024 – 2025',
+    link: '#experience'
   },
   { 
     id: 8,
     title: 'Academic Milestone', 
-    category: 'University', 
-    year: '2024',
-    detail: 'Maintained excellent academic standing while balancing rigorous extracurricular projects and club leadership.',
-    date: '2024',
-    link: '#'
+    category: 'Academics', 
+    year: '2023 – 2027',
+    detail: 'Maintaining strong academic standing in B.Tech Computer Science & Engineering at VIT Bhopal while actively building and leading.',
+    date: 'VIT Bhopal',
+    link: '#education'
   }
 ];
 

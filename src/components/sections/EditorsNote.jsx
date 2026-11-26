@@ -26,29 +26,25 @@ const EditorsNote = () => {
           </div>
 
           {/* Article Text */}
-          <div className="flex-1 flex flex-col gap-8 text-lg font-light text-off-white/80 leading-relaxed font-serif">
+          <div className="flex-1 flex flex-col gap-6 text-lg font-light text-off-white/80 leading-relaxed font-serif">
             
             <p className="text-2xl leading-normal text-off-white">
               <span className="text-6xl float-left mr-4 mt-2 font-bold text-accent leading-none">I</span>
-              didn't start programming because I wanted to write code—I started because I wanted to build things that solve real problems.
+              build production-grade software that bridges robust engineering with applied intelligence—transforming complex technical challenges into scalable, human-centered systems.
             </p>
 
             <p>
-              Today, that curiosity has evolved into building full-stack applications with the MERN stack and experimenting with AI to create smarter software. I enjoy working across the entire development process—from designing backend architectures and APIs to crafting responsive user experiences that make technology feel effortless.
+              My focus spans end-to-end full-stack architectures (React, Next.js, FastAPI, Node.js), scalable database design (MongoDB, PostgreSQL), and intelligent AI workflows. From independently building an AI-assisted evaluation platform as an intern at VolitionSphere to developing multi-agent fact verification systems and context compression engines, I take pride in taking projects from architecture to deployment.
             </p>
 
             <p>
-              Every project is an opportunity to learn something new. Whether it's integrating AI models, optimizing application performance, or collaborating during hackathons, I'm driven by the challenge of turning complex ideas into practical solutions.
-            </p>
-
-            <p>
-              When I'm away from my laptop, you'll usually find me leading NSS initiatives, participating in hackathons, debating, or immersed in a good mystery novel. I believe curiosity isn't just a personality trait—it's the foundation of great engineering.
+              Beyond the terminal, I channel this drive into competitive hackathons (PromptX Winner, Linpack 2nd Runner-Up), technical club leadership at Linpack Club, and community initiatives as NSS Press Lead. I believe relentless curiosity and disciplined execution are the foundations of great engineering.
             </p>
 
             {/* Signature */}
-            <div className="mt-12 pt-8 border-t border-off-white/10">
+            <div className="mt-8 pt-6 border-t border-off-white/10">
               <p className="font-serif text-2xl italic text-off-white">Anushka Joshi</p>
-              <p className="text-xs tracking-widest uppercase text-off-white/40 mt-2">Editor-in-Chief / Engineer</p>
+              <p className="text-xs tracking-widest uppercase text-off-white/40 mt-1">Full-Stack Engineer & AI Builder</p>
             </div>
             
           </div>
