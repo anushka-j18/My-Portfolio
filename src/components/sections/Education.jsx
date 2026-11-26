@@ -2,23 +2,22 @@ import React from 'react';
 
 const educationData = [
   {
-    institution: 'VIT Bhopal University',
-    degree: 'Bachelor of Technology (B.Tech)',
-    specialization: 'Computer Science and Engineering',
+    institution: 'Vellore Institute of Technology, Bhopal',
+    degree: 'B.Tech in Computer Science & Engineering',
+    cgpa: '7.92 / 10',
     duration: 'September 2023 – May 2027',
     location: 'Bhopal, Madhya Pradesh',
     status: 'Currently Pursuing',
   },
   {
     institution: 'Thakur College of Science and Commerce',
-    degree: 'Higher Secondary Certificate (Class XII)',
-    specialization: 'Science Stream',
+    degree: 'Class XII (Higher Secondary)',
+    stream: 'Science',
     location: 'Mumbai, Maharashtra',
   },
   {
     institution: 'Thakur Public School',
-    degree: 'Secondary School Certificate (Class X)',
-    specialization: 'General Studies',
+    degree: 'Class X (Secondary School)',
     location: 'Mumbai, Maharashtra',
   },
 ];
@@ -41,7 +40,7 @@ const Education = () => {
         {/* Section Header */}
         <div className="mb-16 text-center">
           <span className="text-accent text-sm font-semibold tracking-widest-lg uppercase mb-3 block">Section 07</span>
-          <h2 className="text-5xl md:text-6xl font-serif">ACADEMIC BACKGROUND</h2>
+          <h2 className="text-5xl md:text-6xl font-serif">EDUCATION</h2>
         </div>
 
         {/* Compact Education Cards Grid */}
@@ -49,40 +48,47 @@ const Education = () => {
           {educationData.map((edu, index) => (
             <div 
               key={edu.institution}
-              className={`p-6 border rounded-sm flex flex-col justify-between transition-colors ${
+              className={`p-7 border rounded-sm flex flex-col justify-between transition-all ${
                 index === 0 
-                  ? 'border-accent/30 bg-accent/[0.02]' 
+                  ? 'border-accent/30 bg-accent/[0.02] shadow-sm' 
                   : 'border-deep-dark/10 bg-deep-dark/[0.01] hover:border-deep-dark/25'
               }`}
             >
               <div>
-                <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="text-[11px] font-mono uppercase tracking-wider text-deep-dark/50 font-semibold">
+                <div className="flex items-center justify-between gap-2 mb-4">
+                  <span className="text-xs font-mono uppercase tracking-widest text-deep-dark/40 font-semibold">
                     0{index + 1}
                   </span>
                   {edu.status && (
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-accent font-semibold px-2 py-0.5 bg-accent/5 rounded border border-accent/20">
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-accent font-semibold px-2.5 py-0.5 bg-accent/5 rounded border border-accent/20">
                       {edu.status}
                     </span>
                   )}
                 </div>
 
-                <h3 className="text-xl font-serif font-semibold text-deep-dark mb-1 leading-snug">
+                <h3 className="text-2xl font-serif font-semibold text-deep-dark mb-2 leading-snug">
                   {edu.institution}
                 </h3>
                 
-                <h4 className="text-xs font-mono font-medium text-deep-dark/70 uppercase tracking-wider mb-3">
+                <p className="text-base font-serif text-deep-dark/90 font-medium mb-1">
                   {edu.degree}
-                </h4>
+                </p>
 
-                {edu.specialization && (
-                  <p className="text-sm font-serif text-deep-dark/80 mb-2">
-                    {edu.specialization}
+                {edu.stream && (
+                  <p className="text-xs font-mono uppercase tracking-widest text-deep-dark/50 mb-2">
+                    {edu.stream}
                   </p>
+                )}
+
+                {edu.cgpa && (
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-accent/5 text-accent border border-accent/20 rounded text-xs font-mono font-semibold mt-3">
+                    <span className="text-[10px] uppercase tracking-wider text-accent/70">CGPA:</span>
+                    <span>{edu.cgpa}</span>
+                  </div>
                 )}
               </div>
 
-              <div className="pt-4 border-t border-deep-dark/10 text-xs font-mono text-deep-dark/60 flex flex-wrap justify-between gap-2">
+              <div className="pt-5 mt-6 border-t border-deep-dark/10 text-xs font-mono text-deep-dark/60 flex flex-wrap justify-between items-center gap-2">
                 <span>{edu.location}</span>
                 {edu.duration && <span className="font-semibold text-accent">{edu.duration}</span>}
               </div>
@@ -90,7 +96,7 @@ const Education = () => {
           ))}
         </div>
 
-        {/* Compact Relevant Coursework */}
+        {/* Relevant Coursework */}
         <div className="border-t border-deep-dark/10 pt-10 text-center">
           <h5 className="text-xs font-mono font-semibold tracking-widest uppercase text-deep-dark/40 mb-5">
             Relevant Coursework & Core Domains

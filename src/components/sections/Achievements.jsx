@@ -70,7 +70,7 @@ const achievements = [
     title: 'Academic Milestone', 
     category: 'Academics', 
     year: '2023 – 2027',
-    detail: 'Maintaining strong academic standing in B.Tech Computer Science & Engineering at VIT Bhopal while actively building and leading.',
+    detail: 'Maintaining a 7.92 CGPA in B.Tech Computer Science & Engineering at Vellore Institute of Technology, Bhopal while actively building and leading campus initiatives.',
     date: 'VIT Bhopal',
     link: '#education'
   }
