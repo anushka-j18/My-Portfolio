@@ -30,15 +30,19 @@ const EditorsNote = () => {
             
             <p className="text-2xl leading-normal text-off-white">
               <span className="text-6xl float-left mr-4 mt-2 font-bold text-accent leading-none">I</span>
-              build production-grade software that bridges robust engineering with applied intelligence—transforming complex technical challenges into scalable, human-centered systems.
+              'm a Computer Science undergraduate at VIT Bhopal with a passion for building software that solves real-world problems. I enjoy working across the full stack, developing backend systems, and exploring how AI can make applications smarter and more useful.
             </p>
 
             <p>
-              My focus spans end-to-end full-stack architectures (React, Next.js, FastAPI, Node.js), scalable database design (MongoDB, PostgreSQL), and intelligent AI workflows. From independently building an AI-assisted evaluation platform as an intern at VolitionSphere to developing multi-agent fact verification systems and context compression engines, I take pride in taking projects from architecture to deployment.
+              I've independently built a full-stack AI-assisted answer-sheet evaluation platform during my internship at VolitionSphere, and explored ideas ranging from multi-agent fact verification to GenAI context compression. I enjoy taking ownership of projects, from designing databases and building APIs to implementing features and testing complete workflows.
             </p>
 
             <p>
-              Beyond the terminal, I channel this drive into competitive hackathons (PromptX Winner, Linpack 2nd Runner-Up), technical club leadership at Linpack Club, and community initiatives as NSS Press Lead. I believe relentless curiosity and disciplined execution are the foundations of great engineering.
+              Beyond development, I've participated in competitive hackathons, earned recognition at PromptX and Linpack, and taken up leadership responsibilities through technical clubs and community initiatives. I'm always curious to learn, experiment with new technologies, and turn ideas into working solutions.
+            </p>
+
+            <p className="text-xl italic text-off-white/90">
+              I believe good engineering comes from curiosity, consistency, and the willingness to build.
             </p>
 
             {/* Signature */}
