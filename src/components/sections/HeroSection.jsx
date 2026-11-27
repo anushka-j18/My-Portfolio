@@ -20,12 +20,12 @@ const HeroSection = () => {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="hidden xl:flex flex-col justify-between w-48 shrink-0 border-r border-deep-dark/10 pr-6 py-8"
+          className="hidden xl:flex flex-col justify-between w-56 shrink-0 border-r border-deep-dark/10 pr-6 py-8"
         >
           <div>
             <p className="text-xs font-semibold tracking-widest-lg uppercase text-accent mb-8">The Developer</p>
             <ul className="space-y-4 text-sm font-medium text-deep-dark/70">
-              <li>CSE Undergraduate · 2027</li>
+              <li className="whitespace-nowrap">CSE Undergraduate · 2027</li>
               <li>Full-Stack Developer</li>
               <li>AI / GenAI Enthusiast</li>
               <li>Backend & System Design</li>
